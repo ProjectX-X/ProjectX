@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
 html {
   box-sizing: border-box;
 }
@@ -258,6 +259,73 @@ select:-webkit-autofill:focus {
 }
 
 /* ======Order-End===== */
+/*----------------------- ABOUT -----------------------------IFENKIUL*/
+.about {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 150px 0;
+}
+.about__left {
+  display: block;
+  height: 700px;
+  background-color: transparent;
+  align-items: center;
+  border: 15px solid #cccccc;
+}
+.about__right {
+  background-color: white;
+  width: 60%;
+  height: 550px;
+  margin-left: -50px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px -5px 15px gray;
+}
+.about__right__container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 548px;
+  font-size: 24px;
+  padding: 50px 20px;
+  display: flex;
+}
+.about__right__container-text {
+  font-family: "Noto Sans KR";
+  align-self: center;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 30px;
+}
+.about__right__container-text h2 {
+  font-size: 36px;
+  padding-bottom: 30px;
+}
+.about__right__rainbow {
+  align-self: flex-end;
+  width: 100%;
+  height: 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.about__right__rainbow div:nth-child(1) {
+  background-color: red;
+}
+.about__right__rainbow div:nth-child(2) {
+  background-color: green;
+}
+.about__right__rainbow div:nth-child(3) {
+  background-color: purple;
+}
+.about__right__rainbow div:nth-child(4) {
+  background-color: orange;
+}
+/*----------------------- ABOUT -----------------------------IFENKIUL*/
 
 /* ======Footer===== */
 

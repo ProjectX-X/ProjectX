@@ -1,11 +1,170 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Якщо бачиш це -ВСЕ ОК</h1>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ProjectX</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content page-content">
+        <header class="header">
+          <div class="container">
+            <div class="header__inner">
+              <div class="header__logo">
+                <a href="#"> <span>SITEPRO</span>UA</a>
+              </div>
+              <nav class="header__menu">
+                <div class="header__menu-btn">
+                  <div class="header__menu-row"></div>
+                  <div class="header__menu-row"></div>
+                  <div class="header__menu-row"></div>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">
+                      HOME
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      ABOUT US
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      OUR FOCUS
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      TEAM
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      WORK STEPS
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      WHY SELECT US
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      GET IN TOUCH
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <!-- ========================Home=============================================================================== -->
+        <div class="home">
+          <div class="home-container">
+            <div class="home-title">
+              Development <span>of creative Sites</span>
+            </div>
+            <div class="home-button">
+              <a class="started" href="#order">get started</a>
+            </div>
+          </div>
+        </div>
+        <!-- ========================Home-End=============================================================================== -->
+
+        <!-- ========================AboutUs=============================================================================== -->
+
+        <!-- ========================AboutUs-End============================================================================ -->
+
+        <!-- ========================OurFocus============================================================================ -->
+
+        <!-- ========================OurFocus-End============================================================================ -->
+
+        <!-- ========================Team==================================================================================== -->
+
+        <!-- ========================Team-End================================================================================= -->
+
+        <!-- ========================WorkSteps================================================================================= -->
+
+        <!-- ========================WorkSteps-End============================================================================= -->
+
+        <!-- ========================WhySelectUs=============================================================================== -->
+
+        <!-- ========================WhySelectUs-End=========================================================================== -->
+
+        <!-- ========================GetinTouch================================================================================ -->
+        <div class="order">
+          <div class="order-container">
+            <div class="order-title" id="order">
+              Get in Touch
+            </div>
+            <div class="order-description">
+              We understand your requirement and provide quality works.
+            </div>
+            <form name="orderForm" action="#" method="post">
+              <input
+                type="text"
+                placeholder="Your Name"
+                id="name"
+                class="form-item"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                id="email"
+                class="form-item"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Subject"
+                id="subject"
+                class="form-item"
+              />
+              <input
+                type="text"
+                placeholder="Project Budget"
+                id="budget"
+                class="form-item"
+              />
+              <textarea
+                class="form-message"
+                placeholder="Your Message"
+                id="message"
+              ></textarea>
+              <input
+                type="submit"
+                value="send message"
+                class="button"
+                onclick="submitForm()"
+              />
+            </form>
+          </div>
+        </div>
+        <!-- ========================GetinTouch-End============================================================================ -->
+
+        <!-- ========================Footer=================================================================================== -->
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__inner-logo">
+              © SITEPROUA
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- ========================Footer-End=============================================================================== -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

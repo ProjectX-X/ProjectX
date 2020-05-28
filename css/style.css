@@ -363,6 +363,7 @@ select:-webkit-autofill:focus {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  margin-top: -50px;
 }
 .focus__bottom-item {
   width: 250px;

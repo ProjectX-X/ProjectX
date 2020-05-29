@@ -373,9 +373,9 @@ select:-webkit-autofill:focus {
   margin: 0 10px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .focus__bottom-item div {
+  margin-top: 30px;
   width: 100%;
 }
 .focus__bottom-item div h3 {

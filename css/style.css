@@ -417,7 +417,7 @@ select:-webkit-autofill:focus {
 /* ======Footer-End===== */
 
 /* --------------------- MOBILE--------------------------------*/
-@media (max-width: 750px) {
+@media (max-width: 767px) {
   .about {
     width: 100%;
     flex-wrap: wrap;

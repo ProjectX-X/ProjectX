@@ -442,3 +442,44 @@ select:-webkit-autofill:focus {
   color: #666666;
 }
 /* ======Footer-End===== */
+
+/* --------------------- MOBILE--------------------------------*/
+@media (max-width: 767px) {
+  .about {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .about__left {
+    width: 100%;
+    height: unset;
+  }
+  .about__right {
+    margin: 0;
+    width: 100%;
+    height: unset;
+    text-align: center;
+  }
+  .about__right__container {
+    width: 100%;
+    height: unset;
+  }
+  .focus {
+    height: unset;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .focus__top {
+    width: 100%;
+  }
+  .focus__top__container h2 {
+    padding-top: 50px;
+  }
+  .focus__bottom {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .focus__bottom-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

@@ -112,6 +112,7 @@ li {
   color: #ffffff;
   margin-bottom: 30px;
   text-align: center;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 .home-title span {
@@ -124,17 +125,16 @@ li {
 }
 
 .started {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
-  padding: 17px 22px;
+  padding: 18px 30px;
   background-color: #fc5f45;
-  height: 56px;
-  border-radius: calc((18px + 17px * 2) / 2);
+  border: none;
+  border-radius: calc(56px / 2);
   margin: 0 auto;
-  justify-self: center;
   transition: background-color 0.7s;
   outline: none;
 }
@@ -183,6 +183,27 @@ li {
   text-align: center;
   color: #666666;
 }
+.sent form{
+  display: none;
+}
+.sent .form-sent{
+  display: block;
+}
+.form-sent{
+  display: none;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 20px;
+  transform: skewX(25deg);
+}
+.form-sent span{
+  transform: skewX(-25deg);
+  display: block;
+}
 
 .form-item,
 .form-message {
@@ -193,6 +214,7 @@ li {
   border: 2px solid transparent;
   color: #666666;
   font-size: 16px;
+  font-family: "Verdana", sans-serif;
 }
 .form-item::placeholder,
 .form-message::placeholder {
@@ -201,10 +223,17 @@ li {
 .error-input {
   border: 2px solid red;
 }
-
+.error-form{
+  color: red;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.hidden{
+  display: none;
+}
 .form-item:focus,
 .form-message:focus {
-  border: 2px solid #666666;
+  border: 2px solid #38c695;
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -239,28 +268,26 @@ select:-webkit-autofill:focus {
   margin-bottom: 50px;
 }
 
-.button {
+.order .button {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
   padding: 18px 30px;
   background-color: #fc5f45;
-  height: 56px;
   border: none;
   border-radius: calc(56px / 2);
   margin: 0 auto;
-  justify-self: center;
   transition: background-color 0.7s;
   outline: none;
 }
 
-.button:hover {
+.order .button:hover {
   background-color: #ff3615;
 }
 
-.button:active {
+.order .button:active {
   background-color: #e22203;
 }
 
@@ -415,3 +442,49 @@ select:-webkit-autofill:focus {
   color: #666666;
 }
 /* ======Footer-End===== */
+
+/* --------------------- MOBILE--------------------------------*/
+@media (max-width: 950px) {
+  .about {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .about__left {
+    width: 100%;
+    height: unset;
+  }
+  .about__right {
+    margin: 0;
+    width: 100%;
+    height: unset;
+    text-align: center;
+  }
+  .about__right__container {
+    width: 100%;
+    height: unset;
+  }
+  .focus {
+    height: unset;
+    width: 100%;
+  }
+  .focus__top {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .focus__top__container {
+    height: unset;
+    margin-bottom: 20px;
+  }
+  .focus__top__container h2 {
+    padding-top: 50px;
+  }
+  .focus__bottom {
+    width: 100%;
+    margin-top: 0;
+    flex-wrap: wrap;
+  }
+  .focus__bottom-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

@@ -74,7 +74,7 @@
             Development <span>of creative Sites</span>
           </div>
           <div class="home-button">
-            <a class="started" href="#order">get started</a>
+            <span class="started" data-name="order">get started</span>
           </div>
         </div>
       </div>
@@ -163,22 +163,30 @@
       <!-- ========================WhySelectUs-End=========================================================================== -->
 
       <!-- ========================GetinTouch================================================================================ -->
-      <div class="order">
+      <div class="order" id="order">
         <div class="order-container">
-          <div class="order-title" id="order">
+          <div class="order-title">
             Get in Touch
           </div>
           <div class="order-description">
             We understand your requirement and provide quality works.
           </div>
-          <form name="orderForm" action="#" method="post">
+          <div class="form-block">
+            <div class="error-form hidden">
+              Please try again later
+            </div>
+          <form name="orderForm">
             <input type="text" placeholder="Your Name" id="name" class="form-item" required />
             <input type="email" placeholder="Your Email" id="email" class="form-item" required />
             <input type="text" placeholder="Subject" id="subject" class="form-item" />
             <input type="text" placeholder="Project Budget" id="budget" class="form-item" />
             <textarea class="form-message" placeholder="Your Message" id="message"></textarea>
-            <input type="submit" value="send message" class="button" onclick="submitForm()" />
+            <input type="submit" value="send message" class="button _submit" />
           </form>
+            <div class="form-sent">
+              <span>Thanks for contacting. <br>We will contact you shortly.</span>
+            </div>
+          </div>
         </div>
       </div>
       <!-- ========================GetinTouch-End============================================================================ -->

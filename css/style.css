@@ -488,3 +488,172 @@ select:-webkit-autofill:focus {
     margin-bottom: 20px;
   }
 }
+
+
+
+/* Begin======================== Work Steps and Why Select Us ============================= vdobrydin */
+
+.worksteps {
+    font-family: "Verdana";
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.bg_grey_fon {
+    background-color: #f7f7f7;
+}
+
+.worksteps h2 {
+    font-size: 380%;
+    color: #313131;
+    font-weight: normal;
+}
+
+.worksteps p {
+    margin: 2% 0;
+    color: #616161;
+    font-size: 120%;
+} 
+
+.ws_content {
+    position: relative;
+    margin-top: 5%;
+}
+
+.ws_content .img_cont {
+    width: 41%;
+    margin: auto auto;
+    line-height: 0;
+}
+
+.img_cont img {
+    width: 100%;
+}
+
+.ws_content .text_blocks {
+    position: absolute;
+    width: 100%;
+    top: -40px;
+    margin: auto auto;
+}
+
+.text_blocks .wrap_tb {
+    width: 85%;
+    margin: auto auto;
+}
+
+.ws_content .block {
+    width: 40%;
+    background-color: white;
+    padding: 3% 3% 3% 3%;
+}
+
+.block .numb {
+    font-size: 320%;
+    color: #e0e0e0;
+}
+
+.block .title_bl {
+    font-size: 175%;
+    width: 76%;
+    text-align: left;
+}
+
+.block .descr {
+    width: 75%;
+    text-align: left;
+    margin-top: 4%;
+    color: #616161;
+}
+
+.b_red {
+    border-bottom: 3px solid #fc5f45;
+}
+
+.b_green {
+    border-bottom: 3px solid #38c695;
+}
+
+.b_blue {
+    border-bottom: 3px solid #b27cf5;
+}
+
+.b_orange {
+    border-bottom: 3px solid #feb960;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.why_content {
+    width: 85%;
+    margin: auto auto;
+}
+
+.why_content .blockW {
+    display: inline-block;
+    width: 28%;
+    min-width: 200px;
+    padding: 15px;
+}
+
+.blockW .icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    float: left;
+    position: relative;
+    top: 5px;
+}
+
+.blockW .titleW{
+    display: inline-block;
+    font-size: 120%;
+    text-align: left;
+    float: left;
+    margin-left: 15px;
+}
+
+.blockW .descrW{
+    color: #616161;
+    text-align: left;
+    margin-top: 18px;
+}
+
+.bgBsn {
+    background: url("../img/icon_business.png") no-repeat;
+}
+
+.bgUnl {
+    background: url("../img/icon_unlimited.png") no-repeat;
+}
+
+.bgUlt {
+    background: url("../img/icon_ultimate.png") no-repeat;
+}
+
+.bgSmr {
+    background: url("../img/icon_smart.png") no-repeat;
+}
+
+.bgStr {
+    background: url("../img/icon_strict.png") no-repeat;
+}
+
+.bgAwr {
+    background: url("../img/icon_award.png") no-repeat;
+}
+
+/* End======================== Work Steps and Why Select Us ============================= vdobrydin */

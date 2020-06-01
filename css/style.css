@@ -428,7 +428,95 @@ select:-webkit-autofill:focus {
 }
 
 /*------------------------ FOCUS----------------------------- IFENKIUL*/
+/* ======Team===== */
+.team{
+  height: 995px;
+}
+.team__inner{
+ align-items: center;
+ text-align: center
+ }
+.team__inner-title{
+  padding-top: 180px;
+  font-size: 60px;
+  line-height: 80px;
+  margin-bottom: 40px;
+}
+.team__inner-slog{
+  font-size: 18px;
+  color: #616161;
+  margin-bottom: 220px;
+}
+.slider__team{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.slider__team-item{
+  width: 165px;
+  text-align: center;
+}
+.slider__team-foto{
+  width: 150px;
+  height: 185px;
+  margin: 0 auto 20px;
+}
+.slider__team-name-red{
+  color: var(--color-focus-red);
+  font-size: 17px;
+}
+.slider__team-name-green{
+  color: var(--color-focus-green);
+  font-size: 17px;
+}
+.slider__team-name-purple{
+  color: var(--color-focus-purple);
+  font-size: 17px;
+}
+.slider__team-name-orange{
+  color: var(--color-focus-orange);
+  font-size: 17px;
+}
+.slider__team-position{
+  color: #616161;
+  font-size: 12px;
+}
+.slick-arrow {
+  position: relative;
+}
+.slick-arrow:before {
+  display: none;
+}
+button {
+  outline: none;
+}
+.button-arrow-prev {
+  background-image: url(../img/team/arrow-left.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  position: absolute;
+  border: none;
+  outline: none;
+  height: 66px;
+  width: 35px;
+  left: 10px;
+  bottom: 120px;
+  /* padding-left: 26px; */
+}
 
+.button-arrow-next {
+  background-image: url(../img/team/arrow-right.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  position: absolute;
+  border: none;
+  outline: none;
+  height: 66px;
+  width: 35px;
+  bottom: 120px;
+  right: 10px;
+  margin: 0;
+}
+/* ======Team-End===== */
 /* ======Footer===== */
 
 .footer__inner {

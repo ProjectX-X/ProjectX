@@ -93,3 +93,14 @@ message.addEventListener("blur", function () {
 	checkError(message, true);
 })
 document.querySelector('._submit').addEventListener('click', submitForm, false);
+
+
+$(function(){
+    $('.slider__team').slick({
+        slidesToShow: 4,
+        infinite: true,
+        slidesToScroll: 2,
+        prevArrow: '.button-arrow-prev',
+        nextArrow: '.button-arrow-next',
+    });
+});

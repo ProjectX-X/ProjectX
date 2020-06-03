@@ -99,7 +99,7 @@ $(function(){
     $('.slider__team').slick({
         slidesToShow: 4,
         infinite: true,
-        slidesToScroll: 2,
+        slidesToScroll: 4,
         prevArrow: '.button-arrow-prev',
         nextArrow: '.button-arrow-next',
     });

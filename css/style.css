@@ -609,19 +609,23 @@ button {
 
 .worksteps h2 {
   font-size: 380%;
+  line-height: 1.2;
   color: #313131;
   font-weight: normal;
 }
 
 .worksteps p {
-  margin: 2% 0;
+  margin: 1% 0;
   color: #616161;
   font-size: 120%;
 }
 
 .ws_content {
-  position: relative;
   margin-top: 5%;
+  background-image: url("../img/workSteps-all.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 41% auto;
 }
 
 .ws_content .img_cont {
@@ -635,10 +639,10 @@ button {
 }
 
 .ws_content .text_blocks {
-  position: absolute;
+  position: relative;
   width: 100%;
   top: -40px;
-  margin: auto auto;
+  margin: auto auto; 
 }
 
 .text_blocks .wrap_tb {
@@ -708,7 +712,7 @@ button {
 .why_content .blockW {
   display: inline-block;
   width: 28%;
-  min-width: 200px;
+  min-width: 230px;
   padding: 15px;
 }
 

@@ -641,12 +641,11 @@ button {
 .ws_content .text_blocks {
   position: relative;
   width: 100%;
-  top: -40px;
+  top: -20px;
   margin: auto auto; 
 }
 
 .text_blocks .wrap_tb {
-  width: 85%;
   margin: auto auto;
 }
 
@@ -705,7 +704,6 @@ button {
 }
 
 .why_content {
-  width: 85%;
   margin: auto auto;
 }
 

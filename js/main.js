@@ -105,12 +105,3 @@ $(function () {
   });
 });
 
-// ADD ANIMATION SCROLLvar $page = $('html, body');
-var $page = $('html, body');
-$('header a[href*="#"]').click(function () {
-  //console.log($('header a[href*="#"]'));
-  $page.animate({
-    scrollTop: $($.attr(this, 'href')).offset().top
-  }, 900);
-  return false;
-});

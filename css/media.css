@@ -71,3 +71,40 @@
   }
   /* Order End */
 }
+
+/* Begin======================== Work Steps and Why Select Us ============================= vdobrydin */
+
+@media (max-width: 767.98px) {
+    .block .numb {
+        font-size: 150%;
+    }
+    
+    .block .title_bl {
+        font-size: 120%;
+    }
+    
+    .ws_content .block {
+        padding: 1%;
+        width: 43%;
+    }
+    
+    .ws_content .text_blocks {
+        top: 0;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .block .numb {
+        font-size: 190%;
+    }
+    
+    .block .title_bl {
+        font-size: 150%;
+    }
+    
+    .ws_content .text_blocks {
+        top: 0;
+    }
+}
+/* End======================== Work Steps and Why Select Us ============================= vdobrydin */

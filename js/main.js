@@ -8,89 +8,89 @@ const errorMsg = document.querySelector('.error-form');
 
 let started = document.querySelector('.started');
 started.addEventListener("click", function () {
-	console.log(document.querySelector("#" + started.dataset.name));
-	window.scrollTo({
-		top:
-			document.querySelector("#" + started.dataset.name).offsetTop -
-			document.querySelector(".header").offsetHeight,
-		behavior: "smooth",
-	});
+  console.log(document.querySelector("#" + started.dataset.name));
+  window.scrollTo({
+    top:
+      document.querySelector("#" + started.dataset.name).offsetTop -
+      document.querySelector(".header").offsetHeight,
+    behavior: "smooth",
+  });
 });
 
 
 
 function checkError(field, isRequired = false, regex) {
-	errorMsg.classList.add('hidden');
-	if (isRequired && !field.value) {
-		field.classList.add("error-input");
-		return 1;
-	}
-	if (field.value.length > 255) {
-		field.classList.add("error-input");
-		return 1;
-	}
-	if (regex && !regex.test(String(field.value).toLowerCase())) {
-		field.classList.add("error-input");
-		return 1;
-	}
+  errorMsg.classList.add('hidden');
+  if (isRequired && !field.value) {
+    field.classList.add("error-input");
+    return 1;
+  }
+  if (field.value.length > 255) {
+    field.classList.add("error-input");
+    return 1;
+  }
+  if (regex && !regex.test(String(field.value).toLowerCase())) {
+    field.classList.add("error-input");
+    return 1;
+  }
 
-	field.classList.remove("error-input");
-	return 0;
+  field.classList.remove("error-input");
+  return 0;
 }
 
 function submitForm(e) {
-	let errorsCount = 0;
-	e.preventDefault();
+  let errorsCount = 0;
+  e.preventDefault();
 
-	errorsCount += checkError(name, true);
-	errorsCount += checkError(email, true, emailRegex);
-	errorsCount += checkError(subject);
-	errorsCount += checkError(budget);
-	errorsCount += checkError(message, true);
+  errorsCount += checkError(name, true);
+  errorsCount += checkError(email, true, emailRegex);
+  errorsCount += checkError(subject);
+  errorsCount += checkError(budget);
+  errorsCount += checkError(message, true);
 
-	if (errorsCount) {
-		return;
-	}
+  if (errorsCount) {
+    return;
+  }
 
-	const json = JSON.stringify({
-		name: name,
-		email: email,
-		subject: subject,
-		budget: budget,
-		message: message
-	});
+  const json = JSON.stringify({
+    name: name,
+    email: email,
+    subject: subject,
+    budget: budget,
+    message: message
+  });
 
-	// отправим данные
-	let xhr = new XMLHttpRequest();
-	xhr.open("POST", "tbd");
-	xhr.setRequestHeader('Content-Type', 'application/json');
-	xhr.send(json);
+  // отправим данные
+  let xhr = new XMLHttpRequest();
+  xhr.open("POST", "tbd");
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.send(json);
 
-	xhr.onload = () => {
-		console.log(xhr);
+  xhr.onload = () => {
+    console.log(xhr);
 
-		if (xhr.status === 200) {
-			document.querySelector(".form-block").classList.add("sent");
-		} else {
-			errorMsg.classList.remove('hidden');
-		}
-	}
+    if (xhr.status === 200) {
+      document.querySelector(".form-block").classList.add("sent");
+    } else {
+      errorMsg.classList.remove('hidden');
+    }
+  }
 }
 
 name.addEventListener("blur", function () {
-	checkError(name, true);
+  checkError(name, true);
 })
 email.addEventListener("blur", function () {
-	checkError(email, true, emailRegex);
+  checkError(email, true, emailRegex);
 })
 subject.addEventListener("blur", function () {
-	checkError(subject);
+  checkError(subject);
 })
 budget.addEventListener("blur", function () {
-	checkError(budget);
+  checkError(budget);
 })
 message.addEventListener("blur", function () {
-	checkError(message, true);
+  checkError(message, true);
 })
 document.querySelector('._submit').addEventListener('click', submitForm, false);
 
@@ -119,4 +119,4 @@ document.querySelector('' + blockID).scrollIntoView({
 })
 
 }
-// ========================================================
+// =======================================================

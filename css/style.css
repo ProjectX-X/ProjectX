@@ -86,7 +86,9 @@ li {
   color: #f0ba00;
   font-weight: 900;
 }
-
+.header__burger{
+  display: none;
+}
 .header__menu li + li {
   margin-left: 25px;
 }

@@ -115,8 +115,8 @@ const blockID = anchor.getAttribute('href')
 document.querySelector('' + blockID).scrollIntoView({
 	behavior: "smooth",
 	block: "start"
-})
-})
+});
+});
 
 }
 // =============Burger-menu===============================
@@ -124,5 +124,8 @@ document.querySelector('' + blockID).scrollIntoView({
     $('.header__burger, .header__menu').toggleClass('active');
     $('body').toggleClass('lock');
   });
-
+  $('.header__list').click(function(event){
+    $('.header__burger, .header__menu').removeClass('active');
+    $('body').removeClass('lock');
+  });
 // =======================================================

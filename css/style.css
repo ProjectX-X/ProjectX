@@ -104,17 +104,17 @@ ul {
 }
 
 .header__logo {
-  color: #0252d4;
+  color: grey;
   font-size: 36px;
   /* font-family: "Lithos", sans-serif; */
   font-weight: 900;
   position: relative;
   z-index: 3;
 }
-.header__logo span {
+/* .header__logo span {
   color: #f0ba00;
   font-weight: 900;
-}
+} */
 
 .header__burger{
   display: none;

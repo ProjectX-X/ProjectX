@@ -1,5 +1,1 @@
-﻿# ProjectX
-Жодних змін
-Hey there
-
-Ifenkiul here
+https://projectx-x.github.io/ProjectX/

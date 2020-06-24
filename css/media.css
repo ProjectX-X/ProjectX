@@ -173,16 +173,6 @@
   .home {
     padding: 100px 0;
   }
-  .home-container {
-    align-items: flex-end;
-  }
-  .home-title {
-    font-size: 48px;
-    line-height: 85px;
-  }
-  .home-button {
-    width: 60%;
-  }
   /* Home End */
 
   /* Order */
@@ -206,15 +196,12 @@
 @media (min-width: 960px) {
   /* Home */
   .home {
-    padding: 230px 0;
+    padding: 300px 0 200px;
   }
   .home-title {
     margin-bottom: 70px;
-    font-size: 60px;
-    text-align: left;
-  }
-  .home-title span {
-    margin-left: 80px;
+    font-size: 50px;
+    padding: 0 50px;
   }
   /* Home End */
 

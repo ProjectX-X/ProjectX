@@ -133,15 +133,12 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 50px 0;
+  padding: 50px 0 60px;
   box-sizing: border-box;
   margin-top: 70px;
 }
 
 .home-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,38 +148,39 @@ ul {
 .home-title {
   font-size: 36px;
   line-height: 72px;
+  font-weight: 600;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   text-align: center;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-}
-
-.home-title span {
-  display: block;
 }
 
 .home-button {
   width: 100%;
   display: flex;
+  cursor: pointer;
 }
 
 .started {
+  -moz-appearance: none;
+  -webkit-appearance: none;
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
-  padding: 18px 30px;
+  padding: 10px 20px;
   background-color: #fc5f45;
   border: none;
-  border-radius: calc(56px / 2);
+  border-radius: calc(47px / 2);
   margin: 0 auto;
   transition: background-color 0.7s;
   outline: none;
 }
 
-.started:hover {
+.started:hover,
+.started:focus{
   background-color: #ff3615;
 }
 
@@ -257,7 +255,7 @@ ul {
   border: 2px solid transparent;
   color: #666666;
   font-size: 16px;
-  font-family: "Verdana", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .form-item::placeholder,
 .form-message::placeholder {
@@ -276,7 +274,7 @@ ul {
 }
 .form-item:focus,
 .form-message:focus {
-  border: 2px solid #38c695;
+  border: 2px solid #191970;
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -313,20 +311,23 @@ select:-webkit-autofill:focus {
 
 .order .button {
   font-size: 16px;
+  line-height: 27px;
   font-weight: 600;
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
-  padding: 18px 30px;
+  padding: 10px 20px;
   background-color: #fc5f45;
   border: none;
-  border-radius: calc(56px / 2);
+  border-radius: calc(47px / 2);
   margin: 0 auto;
   transition: background-color 0.7s;
   outline: none;
+  cursor: pointer;
 }
 
-.order .button:hover {
+.order .button:hover,
+.order .button:focus{
   background-color: #ff3615;
 }
 

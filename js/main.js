@@ -1,3 +1,4 @@
+//form
 const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 const name = document.querySelector('#name');
 const email = document.querySelector('#email');
@@ -16,8 +17,6 @@ started.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
-
-
 
 function checkError(field, isRequired = false, regex) {
   errorMsg.classList.add('hidden');

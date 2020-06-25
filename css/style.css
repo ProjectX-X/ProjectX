@@ -109,10 +109,6 @@ ul {
 .header__list a:hover {
   color: #444;
 }
-.header__link {
-  font-size: 16px;
-}
-
 .header__logo {
   color: #40649b;
   font-size: 48px;

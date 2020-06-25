@@ -99,6 +99,7 @@ $(function(){
         slidesToShow: 4,
         infinite: true,
         slidesToScroll: 4,
+        // rows: 2,
         prevArrow: '.button-arrow-prev',
         nextArrow: '.button-arrow-next',
     });

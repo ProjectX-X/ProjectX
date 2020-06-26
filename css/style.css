@@ -504,6 +504,11 @@ select:-webkit-autofill:focus {
 	font-weight: 400;
 	font-size: 15px;
 }
+.focus__bottom-photo {
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+}
 
 .focus__bottom-item.first {
 	border-bottom: 2px solid var(--color-focus-red);
@@ -639,12 +644,11 @@ button {
 
 .footer__inner {
 	text-align: center;
-	height: 80px;
-	padding-top: 25px;
+	padding: 15px 0;
 }
 
 .footer__inner-logo {
-	font-size: 24px;
+	font-size: 14px;
 	line-height: 27px;
 	color: #666666;
 }

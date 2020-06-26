@@ -454,24 +454,13 @@ select:-webkit-autofill:focus {
 
 /*------------------------ FOCUS----------------------------- IFENKIUL*/
 .focus {
-	/*width: 100%;*/
 	background-color: #f7f7f7;
-	/*height: 750px;*/
 	padding: 140px 0;
 }
 
 .focus__top {
-	/*width: 100%;*/
-	/*!*height: 50%;*!*/
-	/*display: flex;*/
-	/*justify-content: center;*/
-	/*align-items: center;*/
 	text-align: center;
 }
-
-/*.focus__top__container {*/
-/*	text-align: center;*/
-/*}*/
 
 .focus__top h2 {
 	font-size: 60px;
@@ -490,27 +479,16 @@ select:-webkit-autofill:focus {
 .focus__bottom {
 	display: flex;
 	justify-content: space-between;
-	/*align-items: flex-start;*/
-	/*margin-top: -50px;*/
 }
 
 .focus__bottom-item {
-	/*width: 250px;*/
-	/*height: 300px;*/
 	background-color: white;
 	text-align: center;
-	/*margin: 0 10px;*/
-	/*display: flex;*/
-	/*justify-content: center;*/
 	margin-right: 20px;
 	padding: 60px 20px 40px;
 }
 .focus__bottom-item:last-child{
 	margin-right: 0;
-}
-.focus__bottom-item div {
-	/*margin-top: 30px;*/
-	/*width: 100%;*/
 }
 
 .focus__bottom-item h3 {
@@ -724,7 +702,6 @@ button {
 /* Begin======================== Work Steps and Why Select Us ============================= vdobrydin */
 
 .worksteps {
-	font-family: "Verdana";
 	text-align: center;
 	padding-top: 10%;
 	padding-bottom: 10%;

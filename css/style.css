@@ -709,8 +709,8 @@ button {
 
 .worksteps {
 	text-align: center;
-	padding-top: 10%;
-	padding-bottom: 10%;
+	padding-top: 7%;
+	padding-bottom: 7%;
 }
 
 .bg_grey_fon {
@@ -734,8 +734,9 @@ button {
 	margin-top: 5%;
 	background-image: url("../img/workSteps-all_2.jpg");
 	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 41% auto;
+	background-position-x: center;
+	background-position-y: top;
+	background-size: 50% auto;
 }
 
 .ws_content .img_cont {
@@ -751,7 +752,7 @@ button {
 .ws_content .text_blocks {
 	position: relative;
 	width: 100%;
-	top: -20px;
+	top: -33px;
 	margin: auto auto;
 }
 
@@ -762,7 +763,8 @@ button {
 .ws_content .block {
 	width: 40%;
 	background-color: white;
-	padding: 3% 3% 3% 3%;
+	padding: 5% 3% 5% 3%;
+	margin: 5% 0;
 }
 
 .block .numb {

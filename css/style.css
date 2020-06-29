@@ -107,7 +107,7 @@ ul {
   transition: all 0.5s;
 }
 .header__list a:hover {
-  color: #444;
+  color: #111;
 }
 .header__logo {
   color: #40649b;
@@ -116,6 +116,9 @@ ul {
   font-weight: 400;
   position: relative;
   z-index: 3;
+}
+.header__link.selected{
+  color: #40649b;
 }
 .header__burger {
   display: none;

@@ -99,13 +99,29 @@ $(function(){
         slidesToShow: 4,
         infinite: true,
         slidesToScroll: 4,
-        // rows: 2,
         prevArrow: '.button-arrow-prev',
         nextArrow: '.button-arrow-next',
+        responsive: [
+          {
+            breakpoint: 959,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+      
+        ]
     });
 });
 // =============smooth scroll to the anchor===============
-const anchors = document.querySelectorAll('a[href*="#"]')
+const anchors = document.querySelectorAll('.header__body a[href*="#"]')
 
 for (let anchor of anchors) {
 
@@ -119,6 +135,19 @@ document.querySelector('' + blockID).scrollIntoView({
 });
 
 }
+// ================Change the color of menu links===========
+let anchorArr = document.getElementsByClassName('header__link');
+let prevLink = "";
+  for (let i = 0; i < anchorArr.length; i++) {
+    anchorArr[i].onclick = function(){
+      if (prevLink != "" && prevLink != this)
+      {
+        prevLink.className = "header__link";
+      }
+      this.className = "header__link selected";
+      prevLink = this;
+    }
+  }
 // =============Burger-menu===============================
   $('.header__burger').click(function(event){
     $('.header__burger, .header__menu').toggleClass('active');
@@ -128,4 +157,6 @@ document.querySelector('' + blockID).scrollIntoView({
     $('.header__burger, .header__menu').removeClass('active');
     $('body').removeClass('lock');
   });
+// =======================================================
+ 
 // =======================================================

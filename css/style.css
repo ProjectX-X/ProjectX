@@ -209,163 +209,6 @@ ul {
 
 /* ======Home-End===== */
 
-/* ======Order===== */
-.order {
-	background-image: url("../img/getInTouch.png");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	padding: 50px 10px;
-	box-sizing: border-box;
-}
-
-.order-container {
-	width: 94%;
-	margin: 0 3%;
-	position: relative;
-}
-
-.order-title {
-	color: #fff;
-	font-size: 36px;
-	margin-bottom: 20px;
-	text-align: center;
-}
-
-.order-description {
-	font-size: 16px;
-	margin-bottom: 50px;
-	text-align: center;
-	color: #fff;
-}
-
-.order form {
-	font-size: 0;
-	text-align: center;
-	color: #666666;
-}
-
-.sent form {
-	display: none;
-}
-
-.sent .form-sent {
-	display: block;
-}
-
-.form-sent {
-	display: none;
-	max-width: 300px;
-	margin: 0 auto;
-	text-align: center;
-	font-size: 16px;
-	color: #fff;
-	border: 1px solid #fff;
-	padding: 20px;
-	transform: skewX(25deg);
-}
-
-.form-sent span {
-	transform: skewX(-25deg);
-	display: block;
-}
-
-.form-item,
-.form-message {
-	padding: 14px 0;
-	text-align: center;
-	border-radius: 4px;
-	outline: none;
-	border: 2px solid transparent;
-	color: #666666;
-	font-size: 16px;
-	font-family: "Poppins", sans-serif;
-}
-
-.form-item::placeholder,
-.form-message::placeholder {
-	color: #b6b2b2;
-}
-
-.error-input {
-	border: 2px solid red;
-}
-
-.error-form {
-	color: red;
-	padding-bottom: 10px;
-	text-align: center;
-}
-
-.hidden {
-	display: none;
-}
-
-.form-item:focus,
-.form-message:focus {
-	border: 2px solid #191970;
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-	-webkit-text-fill-color: #666666;
-	-webkit-box-shadow: 0 0 0px 1000px transparent inset;
-	transition: background-color 5000s ease-in-out 0s;
-	background: -webkit-linear-gradient(
-			top,
-			rgba(255, 255, 255, 0) 0%,
-			rgba(0, 174, 255, 0.04) 50%,
-			rgba(255, 255, 255, 0) 51%,
-			rgba(0, 174, 255, 0.03) 100%
-	);
-}
-
-.form-item {
-	width: 100%;
-	margin-bottom: 24px;
-}
-
-.form-message {
-	width: 100%;
-	height: 200px;
-	margin-bottom: 50px;
-}
-
-.order .button {
-	font-size: 16px;
-	line-height: 27px;
-	font-weight: 600;
-	text-transform: uppercase;
-	color: #ffffff;
-	text-decoration: none;
-	padding: 10px 20px;
-	background-color: #fc5f45;
-	border: none;
-	border-radius: calc(47px / 2);
-	margin: 0 auto;
-	transition: background-color 0.7s;
-	outline: none;
-	cursor: pointer;
-}
-
-.order .button:hover,
-.order .button:focus {
-	background-color: #ff3615;
-}
-
-.order .button:active {
-	background-color: #e22203;
-}
-
-/* ======Order-End===== */
 /*----------------------- ABOUT -----------------------------IFENKIUL*/
 .about {
 	padding: 100px 0 150px;
@@ -644,68 +487,6 @@ button {
 }
 
 /* ======Team-End===== */
-/* ======Footer===== */
-
-.footer__inner {
-	text-align: center;
-	padding: 15px 0;
-}
-
-.footer__inner-logo {
-	font-size: 14px;
-	line-height: 27px;
-	color: #666666;
-}
-.footer__inner-logo a:hover,
-.footer__inner-logo a:focus{
-	color: #444444;
-}
-.footer__inner-logo a:active{
-	color: #111111;
-}
-
-/* ======Footer-End===== */
-
-/* --------------------- MOBILE--------------------------------*/
-@media (max-width: 950px) {
-	.about__left {
-		width: 70%;
-	}
-
-	.about__right {
-		margin-left: -30%;
-		width: 70%;
-		margin-bottom: -60%;
-	}
-
-	.about__right__container {
-		padding: 20px;
-	}
-
-	.focus {
-		padding: 50px 0;
-	}
-
-	.focus__top p {
-		margin-bottom: 20px;
-	}
-
-	.focus__bottom {
-	display: flex;
-		flex-wrap: wrap;
-	}
-
-	.focus__bottom-item {
-		width: 44%;
-		margin-bottom: 20px;
-		margin-right: 3%;
-		margin-left: 3%;
-	}
-	.focus__bottom-item:last-child{
-		margin-right: 3%;
-		margin-left: 3%;
-	}
-}
 
 /* Begin======================== Work Steps and Why Select Us ============================= vdobrydin */
 
@@ -876,3 +657,182 @@ button {
 }
 
 /* End======================== Work Steps and Why Select Us ============================= vdobrydin */
+
+/* ======Order-GetinTouch===== */
+.order {
+	background-image: url("../img/getInTouch.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding: 50px 10px;
+	box-sizing: border-box;
+}
+
+.order-container {
+	width: 94%;
+	margin: 0 3%;
+	position: relative;
+}
+
+.order-title {
+	color: #fff;
+	font-size: 36px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.order-description {
+	font-size: 16px;
+	margin-bottom: 50px;
+	text-align: center;
+	color: #fff;
+}
+
+.order form {
+	font-size: 0;
+	text-align: center;
+	color: #666666;
+}
+
+.sent form {
+	display: none;
+}
+
+.sent .form-sent {
+	display: block;
+}
+
+.form-sent {
+	display: none;
+	max-width: 300px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 20px;
+	transform: skewX(25deg);
+}
+
+.form-sent span {
+	transform: skewX(-25deg);
+	display: block;
+}
+
+.form-item,
+.form-message {
+	padding: 14px 0;
+	text-align: center;
+	border-radius: 4px;
+	outline: none;
+	border: 2px solid transparent;
+	color: #666666;
+	font-size: 16px;
+	font-family: "Poppins", sans-serif;
+}
+
+.form-item::placeholder,
+.form-message::placeholder {
+	color: #b6b2b2;
+}
+
+.error-input {
+	border: 2px solid red;
+}
+
+.error-form {
+	color: red;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.form-item:focus,
+.form-message:focus {
+	border: 2px solid #191970;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	-webkit-text-fill-color: #666666;
+	-webkit-box-shadow: 0 0 0px 1000px transparent inset;
+	transition: background-color 5000s ease-in-out 0s;
+	background: -webkit-linear-gradient(
+			top,
+			rgba(255, 255, 255, 0) 0%,
+			rgba(0, 174, 255, 0.04) 50%,
+			rgba(255, 255, 255, 0) 51%,
+			rgba(0, 174, 255, 0.03) 100%
+	);
+}
+
+.form-item {
+	width: 100%;
+	margin-bottom: 24px;
+}
+
+.form-message {
+	width: 100%;
+	height: 200px;
+	margin-bottom: 50px;
+}
+
+.order .button {
+	font-size: 16px;
+	line-height: 27px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 10px 20px;
+	background-color: #fc5f45;
+	border: none;
+	border-radius: calc(47px / 2);
+	margin: 0 auto;
+	transition: background-color 0.7s;
+	outline: none;
+	cursor: pointer;
+}
+
+.order .button:hover,
+.order .button:focus {
+	background-color: #ff3615;
+}
+
+.order .button:active {
+	background-color: #e22203;
+}
+
+/* ======Order-GetinTouch-End===== */
+/* ======Footer===== */
+
+.footer__inner {
+	text-align: center;
+	padding: 15px 0;
+}
+
+.footer__inner-logo {
+	font-size: 14px;
+	line-height: 27px;
+	color: #666666;
+}
+.footer__inner-logo a:hover,
+.footer__inner-logo a:focus{
+	color: #444444;
+}
+.footer__inner-logo a:active{
+	color: #111111;
+}
+
+/* ======Footer-End===== */

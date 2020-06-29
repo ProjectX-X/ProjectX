@@ -31,6 +31,51 @@
   /* Team-End */
 
 }
+
+@media (max-width: 950px) {
+  /* AboutUs */
+	.about__left {
+		width: 70%;
+	}
+
+	.about__right {
+		margin-left: -30%;
+		width: 70%;
+		margin-bottom: -60%;
+	}
+
+	.about__right__container {
+		padding: 20px;
+	}
+/* AboutUs-End */
+/* OurFocus */
+	.focus {
+		padding: 50px 0;
+	}
+
+	.focus__top p {
+		margin-bottom: 20px;
+	}
+
+	.focus__bottom {
+	display: flex;
+		flex-wrap: wrap;
+	}
+
+	.focus__bottom-item {
+		width: 44%;
+		margin-bottom: 20px;
+		margin-right: 3%;
+		margin-left: 3%;
+	}
+	.focus__bottom-item:last-child{
+		margin-right: 3%;
+		margin-left: 3%;
+  }
+  /* OurFocus-End */
+}
+
+
 @media (max-width: 930px) {
   /* Header */
   .header__logo {

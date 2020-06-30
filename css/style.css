@@ -126,7 +126,7 @@ ul {
 }
 
 .header__list a:hover {
-  color: #111;
+  color: #444444;
 }
 
 .header__logo {
@@ -138,7 +138,7 @@ ul {
 	z-index: 3;
 }
 .header__link.selected{
-  color: #40649b;
+  color: #111111;
 }
 .header__burger {
 	display: none;

@@ -275,37 +275,81 @@
 }
 
 /* Begin======================== Work Steps and Why Select Us ============================= vdobrydin */
-
-@media (max-width: 767.98px) {
-  .block .numb {
-    font-size: 150%;
+/*
+@media (max-width: 768px) {
+  .ws_content .wrap_tb {
+	  padding: 10% 0;
   }
-
-  .block .title_bl {
-    font-size: 120%;
-  }
-
-  .ws_content .block {
-    padding: 1%;
-    width: 43%;
-  }
-
-  .ws_content .text_blocks {
-    top: 0;
-  }
-}
+  
+  
+}*/
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .block .numb {
-    font-size: 190%;
+  
+  
   }
+  
+  @media (max-width: 991.98px) {
 
   .block .title_bl {
     font-size: 150%;
+	word-wrap: normal;
+  }  
+	  
+	.ws_content {
+	background-size: 100% auto; 
   }
-
+  
+  .centBlock {
+	float: none;
+	clear: both !important;
+    margin: 0 auto !important;  
+  }
+  
   .ws_content .text_blocks {
     top: 0;
   }
+  
+  .ws_content {
+	background-image: none;
+  }
+  
+  .ws_content .block {
+    width: 55%;
+  }
+  
+  .ws_content .wrap_tb {
+	  background-repeat: no-repeat;
+	  background-size: 100% auto; 
+	  padding: 15% 0;
+  }
+  
+  
+  .ws_content .wrap_tb.bg1 {
+	  background-image: url("../img/workSt_1.jpg");
+  }
+  
+  .ws_content .wrap_tb.bg2 {
+	  background-image: url("../img/workSt_2.jpg");
+  }
+  
+  .ws_content .wrap_tb.bg3 {
+	  background-image: url("../img/workSt_3.jpg");
+  }
+  
+  .ws_content .wrap_tb.bg4 {
+	  background-image: url("../img/workSt_4.jpg");
+  }
+  
+  .why_content .blockW {
+    width: 40%;
+  }
+  
 }
+
+@media (max-width: 768px) {
+  .ws_content .wrap_tb {
+	  padding: 5% 0;
+  }
+
 /* End======================== Work Steps and Why Select Us ============================= vdobrydin */

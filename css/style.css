@@ -515,7 +515,7 @@ button {
 
 .ws_content {
 	margin-top: 5%;
-	background-image: url("../img/workSteps-all_2.jpg");
+	background-image: url("../img/workSteps-all.jpg");
 	background-repeat: no-repeat;
 	background-position-x: center;
 	background-position-y: top;
@@ -534,14 +534,9 @@ button {
 
 .ws_content .text_blocks {
 	position: relative;
-	width: 100%;
 	top: -33px;
-	margin: auto auto;
 }
 
-.text_blocks .wrap_tb {
-	margin: auto auto;
-}
 
 .ws_content .block {
 	width: 40%;

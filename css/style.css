@@ -190,17 +190,18 @@ ul {
 	color: #ffffff;
 	text-decoration: none;
 	padding: 10px 20px;
-	background-color: #fc5f45;
+	background-image: linear-gradient(to right, #f5af19 0%, #f12711 45%, #f12711 55%, #f5af19 100%);
+	background-size: 200% auto;
 	border: none;
 	border-radius: calc(47px / 2);
 	margin: 0 auto;
-	transition: background-color 0.7s;
+	transition: background 0.7s;
 	outline: none;
 }
 
 .started:hover,
 .started:focus {
-	background-color: #ff3615;
+	background-position: right center;
 }
 
 .started:active {
@@ -780,7 +781,7 @@ select:-webkit-autofill:focus {
 .form-message {
 	width: 100%;
 	height: 200px;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 
 .order .button {
@@ -791,18 +792,19 @@ select:-webkit-autofill:focus {
 	color: #ffffff;
 	text-decoration: none;
 	padding: 10px 20px;
-	background-color: #fc5f45;
+	background-image: linear-gradient(to right, #f5af19 0%, #f12711 45%, #f12711 55%, #f5af19 100%);
+	background-size: 200% auto;
 	border: none;
 	border-radius: calc(47px / 2);
 	margin: 0 auto;
-	transition: background-color 0.7s;
+	transition: background 0.7s;
 	outline: none;
 	cursor: pointer;
 }
 
 .order .button:hover,
 .order .button:focus {
-	background-color: #ff3615;
+	background-position: right center;
 }
 
 .order .button:active {

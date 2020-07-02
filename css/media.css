@@ -221,17 +221,20 @@
 @media (min-width: 768px) {
   /* Home */
   .home {
-    padding: 100px 0;
+    padding: 180px 0 130px;
   }
   /* Home End */
 
   /* Order */
   .order {
-    padding: 100px 10px;
+    padding: 50px 10px;
   }
   .order-title {
     font-size: 48px;
     margin-bottom: 26px;
+  }
+  .order-description {
+    margin-bottom: 30px;
   }
   .form-item {
     width: calc((100% - 30px) / 2);
@@ -249,7 +252,7 @@
     padding: 300px 0 200px;
   }
   .home-title {
-    margin-bottom: 70px;
+    margin-bottom: 90px;
     font-size: 50px;
     padding: 0 50px;
   }
@@ -260,7 +263,7 @@
     padding: 140px 5px 100px;
   }
   .order-container {
-    width: 60%;
+    width: 66%;
     margin: 0 auto;
   }
   .order-title {
@@ -270,6 +273,9 @@
   .order-description {
     font-size: 18px;
     margin-bottom: 70px;
+  }
+  .form-message{
+    margin-bottom: 50px;
   }
   /* Order End */
 }
@@ -349,7 +355,7 @@
 
 @media (max-width: 768px) {
   .ws_content .wrap_tb {
-	  padding: 5% 0;
+    padding: 5% 0;
   }
-
+}
 /* End======================== Work Steps and Why Select Us ============================= vdobrydin */

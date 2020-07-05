@@ -109,6 +109,10 @@ ul {
 	z-index: 2;
 }
 
+.about__right__rainbow.header__list--rainbow{
+	display: none;
+}
+
 .header__list li {
 	position: relative;
 	/* margin-left: 25px; */

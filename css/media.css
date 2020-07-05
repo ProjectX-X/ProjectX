@@ -167,8 +167,9 @@
     width: 100%;
     overflow: auto;
     height: 100%;
-    background-image: url(../img/burger-image.jpg);
-    background-repeat: no-repeat;
+    background-color: #fff;
+    /* background-image: url(../img/burger-image.jpg); */
+    /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: center;
     opacity: 0.95;
@@ -180,16 +181,29 @@
   }
   .header__list {
     display: block;
+    padding-top: 30px;
+  }
+  .about__right__rainbow.header__list--rainbow{
+    display: grid;
+    position: absolute;
+    top: 10px;
+  }
+  .header__list li + li::before {
+    display: none;
   }
   .header__list li {
     margin: 0 0 20px 0;
+    padding-left: 0;
   }
   .header__link {
     font-size: 24px;
-    color: #fff;
+    color: #999999 ;
+  }
+  .header__link.selected{
+    color: #40649b;
   }
   .home {
-    margin-top: 50px;
+    margin-top: 80px;
   }
   /* Header-burgerEnd */
 

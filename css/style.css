@@ -216,42 +216,62 @@ ul {
 
 /*----------------------- ABOUT -----------------------------IFENKIUL*/
 .about {
-	padding: 100px 0 150px;
+	padding: 25px 0;
 }
 
 .about__row {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
 }
 
 .about__left {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	width: 50%;
-	height: 700px;
+	height: 500px;
 	background-color: transparent;
 	background-image: url("../img/aboutUs.png");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	border: 15px solid #cccccc;
 }
 
 .about__right {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
-	width: 55%;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
-	margin-left: -5%;
 	text-align: left;
 }
 
 .about__right__container {
 	background-color: #ffffff;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	box-shadow: 5px -5px 15px gray;
+	-webkit-box-shadow: 5px 5px 15px gray;
+	box-shadow: 5px 5px 15px gray;
 	width: 100%;
 	font-size: 24px;
-	padding: 90px 60px;
+	padding: 25px 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	text-align: center;
 }
 
 .about__right__container-text {
@@ -262,8 +282,8 @@ ul {
 }
 
 .about__right__container-text h2 {
-	font-size: 400%;
-	padding-bottom: 30px;
+	font-size: 25px;
+	margin-bottom: 20px;
 	color: #313131;
 	font-weight: 400;
 }
@@ -280,7 +300,9 @@ ul {
 	align-self: flex-end;
 	width: 100%;
 	height: 2px;
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: 1fr 1fr 1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
@@ -300,12 +322,12 @@ ul {
 	background-color: var(--color-focus-orange);
 }
 
-/*----------------------- ABOUT -----------------------------IFENKIUL*/
+/*----------------------- ABOUT END-----------------------------IFENKIUL*/
 
 /*------------------------ FOCUS----------------------------- IFENKIUL*/
 .focus {
 	background-color: #f7f7f7;
-	padding: 140px 0;
+	padding: 25px 0;
 }
 
 .focus__top {
@@ -313,38 +335,39 @@ ul {
 }
 
 .focus__top h2 {
-	font-size: 400%;
+	font-size: 25px;
 	font-weight: 400;
-	padding-bottom: 30px;
+	margin-bottom: 15px;
 	color: #313131;
 }
 
 .focus__top p {
-	font-size: 120%;
+	font-size: 100%;
 	font-weight: 400;
 	color: #616161;
-	margin-bottom: 70px;
+	margin-bottom: 20px;
 }
 
 .focus__bottom {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .focus__bottom-item {
+	width: 100%;
+	margin-bottom: 20px;
 	background-color: white;
 	text-align: center;
-	margin-right: 20px;
-	padding: 60px 20px 40px;
-}
-.focus__bottom-item:last-child{
-	margin-right: 0;
+	padding: 20px 40px 40px;
 }
 
 .focus__bottom-item h3 {
 	font-size: 135%;
 	font-weight: 400;
-	padding-bottom: 30px;
+	margin-bottom: 15px;
 	color: #616161;
 	margin-top: 15px;
 }
@@ -354,11 +377,19 @@ ul {
 	font-weight: 400;
 	font-size: 100%;
 }
+
 .focus__bottom-photo {
-	width: 50px;
 	height: 50px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
 	align-items: flex-end;
+}
+
+.focus__bottom-photo img {
+	height: 40px;
 	margin: 0 auto;
 }
 

@@ -691,6 +691,9 @@ button {
 	background: url("../img/icon_award.png") no-repeat;
 }
 
+.wrap_tb img {
+	display: none; 
+}
 /* End======================== Work Steps and Why Select Us ============================= vdobrydin */
 
 /* ======Order-GetinTouch===== */

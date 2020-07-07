@@ -385,19 +385,6 @@
 }
 
 /* Begin======================== Work Steps and Why Select Us ============================= vdobrydin */
-/*
-@media (max-width: 768px) {
-  .ws_content .wrap_tb {
-	  padding: 10% 0;
-  }
-  
-  
-}*/
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  
-  
-  }
   
   @media (max-width: 991.98px) {
 
@@ -455,11 +442,57 @@
     width: 40%;
   }
   
-}
+   
+ }
 
 @media (max-width: 768px) {
   .ws_content .wrap_tb {
-    padding: 5% 0;
+    padding: 0 0 5% 0;
+  }
+  
+  .why_content .blockW {
+    width: 60%;
+}
+
+.ws_content .block {
+    width: 100%;
+}
+
+.ws_content .wrap_tb {
+    background-image: none !important;
+}
+
+.wrap_tb img {
+	display: block;
+	width: 100%;
+  
+}
+
+.blockMobile {
+	float: none !important;
+	display: inline-block;
+}
+
+.block .title_bl {
+	width: auto !important;
+}
+
+.block .descr {
+    width: auto; 
+    text-align: center;
+}
+
+.stepNumbMobile {
+	position: relative;
+    top: 18px;
+    left: -20px;
+}
+.block .descr {
+	margin-top: 6%;
+}
+.worksteps {
+    padding-top: 3%;
+    padding-bottom: 3%;
   }
 }
 /* End======================== Work Steps and Why Select Us ============================= vdobrydin */

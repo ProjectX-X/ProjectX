@@ -51,7 +51,7 @@ body {
 }
 
 a {
-	color: #666666;
+	color: #999999;
 	display: inline-block;
 	text-decoration: none;
 }
@@ -121,6 +121,7 @@ ul {
 
 .header__list li + li::before {
 	content: "|";
+	color: #999999;
 	position: absolute;
 	left: 5px;
 }
@@ -130,7 +131,7 @@ ul {
 }
 
 .header__list a:hover {
-  color: #444444;
+  color: #333333;
 }
 
 .header__logo {
@@ -142,7 +143,7 @@ ul {
 	z-index: 3;
 }
 .header__link.selected{
-  color: #111111;
+  color: #40649b;
 }
 .header__burger {
 	display: none;
@@ -394,6 +395,7 @@ ul {
 	font-size: 60px;
 	line-height: 80px;
 	margin-bottom: 185px;
+	color: #313131;
 }
 
 /* .team__inner-slog {
@@ -474,6 +476,7 @@ button {
 	width: 45px;
 	left: 10px;
 	bottom: 175px;
+	cursor: pointer;
 	/* padding-left: 26px; */
 }
 
@@ -489,6 +492,7 @@ button {
 	bottom: 175px;
 	right: -10px;
 	margin: 0;
+	cursor: pointer;
 }
 
 /* ======Team-End===== */

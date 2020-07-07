@@ -116,7 +116,14 @@ $(function(){
               slidesToScroll: 2
             }
           },
-      
+          {
+            breakpoint: 500,
+            settings: {
+              arrows: true,
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
         ]
     });
 });

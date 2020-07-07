@@ -183,6 +183,15 @@
   /* Team-End */
 }
 
+@media (max-width: 500px) {
+  /* Team */
+  .slick-arrow {
+    display: block;
+  }
+  /* Team-End */
+
+}
+
 @media (max-width: 321px) {
   /* Header-burger */
   .header__logo {

@@ -157,7 +157,7 @@ ul {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	padding: 50px 0 60px;
+	padding: 100px 0;
 	box-sizing: border-box;
 	margin-top: 75px;
 }
@@ -170,12 +170,12 @@ ul {
 }
 
 .home-title {
-	font-size: 36px;
+	font-size: 20px;
 	line-height: 72px;
 	font-weight: 600;
 	text-transform: uppercase;
 	color: #ffffff;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	text-align: center;
 	text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
@@ -194,7 +194,7 @@ ul {
 	text-transform: uppercase;
 	color: #ffffff;
 	text-decoration: none;
-	padding: 10px 20px;
+	padding: 5px 15px;
 	background-image: linear-gradient(to right, #f5af19 0%, #f12711 45%, #f12711 55%, #f5af19 100%);
 	background-size: 200% auto;
 	border: none;
@@ -699,7 +699,7 @@ button {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	padding: 50px 10px;
+	padding: 20px 10px;
 	box-sizing: border-box;
 }
 
@@ -712,13 +712,13 @@ button {
 .order-title {
 	color: #fff;
 	font-size: 36px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	text-align: center;
 }
 
 .order-description {
-	font-size: 16px;
-	margin-bottom: 30px;
+	font-size: 12px;
+	margin-bottom: 10px;
 	text-align: center;
 	color: #fff;
 }
@@ -773,6 +773,12 @@ button {
 .form-item-container{
 	position: relative;
 	margin-bottom: 24px;
+}
+.form-item-container.message{
+	margin-bottom: 12px;
+}
+.d-none{
+	display: none;
 }
 .error-input-add{
 	position: absolute;
@@ -848,7 +854,7 @@ select:-webkit-autofill:focus {
 	text-transform: uppercase;
 	color: #ffffff;
 	text-decoration: none;
-	padding: 10px 20px;
+	padding: 5px 15px;
 	background-image: linear-gradient(to right, #f5af19 0%, #f12711 45%, #f12711 55%, #f5af19 100%);
 	background-size: 200% auto;
 	border: none;

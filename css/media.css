@@ -191,6 +191,11 @@
   /* Team-End */
 
 }
+@media (max-width: 321px) {
+ .home-title{
+   font-size: 17px;
+ }
+}
 
 @media (max-width: 321px) {
   /* Header-burger */
@@ -208,6 +213,13 @@
   /* Home */
   .home {
     padding: 180px 0 130px;
+  }
+  .home-title{
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  .started{
+    padding: 10px 20px;
   }
   /* Home End */
 
@@ -282,10 +294,17 @@
   }
   .order-description {
     margin-bottom: 30px;
+    font-size: 16px;
+  }
+  .d-none{
+    display: inline-block;
   }
   .form-item-container {
     display: inline-block;
     width: calc((100% - 30px) / 2);
+  }
+  .order .button {
+    padding: 10px 20px;
   }
   .form-item-container:nth-child(2n-1) {
     margin-right: 30px;
@@ -293,6 +312,7 @@
   .form-item-container.message{
     width: 100%;
     margin-right: 0;
+    margin-bottom: 24px;
   }
   /* Order End */
 }

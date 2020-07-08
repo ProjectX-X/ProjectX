@@ -165,16 +165,42 @@ $(".header__list").click(function (event) {
 
 // =======================================HEADER-CHANGING BG-COLOR @Ifenkiul 8.07.2020
 const toolbar = document.querySelector(".header");
+const aboutCoordinates =
+  document.querySelector(".about").getBoundingClientRect().top + window.scrollY;
+
+const ourFocusCoordinates =
+  document.querySelector(".focus").getBoundingClientRect().top + window.scrollY;
+
+const teamCoordinates =
+  document.querySelector(".team").getBoundingClientRect().top + window.scrollY;
+
+const workStepsCoordinates =
+  document.querySelector(".worksteps").getBoundingClientRect().top +
+  window.scrollY;
+
+const selectCoordinates =
+  document.querySelector("#select").getBoundingClientRect().top +
+  window.scrollY;
 
 window.addEventListener("scroll", function () {
   const windowScroll = window.scrollY;
-  if (windowScroll > 1000 && windowScroll < 2000) {
+
+  if (windowScroll >= aboutCoordinates && windowScroll < ourFocusCoordinates) {
     toolbar.style.backgroundColor = "rgba(246, 71, 71, 0.9)"; //RED
-  } else if (windowScroll > 2000 && windowScroll < 3000) {
+  } else if (
+    windowScroll >= ourFocusCoordinates &&
+    windowScroll < teamCoordinates
+  ) {
     toolbar.style.backgroundColor = "rgba(0,250,154, 0.9)"; //GREEN
-  } else if (windowScroll > 3000 && windowScroll < 4000) {
+  } else if (
+    windowScroll >= teamCoordinates &&
+    windowScroll < workStepsCoordinates
+  ) {
     toolbar.style.backgroundColor = "rgba(190, 144, 212,0.9)"; //PURPLE
-  } else if (windowScroll > 4000 && windowScroll < 5000) {
+  } else if (
+    windowScroll >= workStepsCoordinates &&
+    windowScroll < selectCoordinates
+  ) {
     toolbar.style.backgroundColor = "rgba(245, 171, 53, 0.9)"; //ORANGE
   } else {
     toolbar.style.backgroundColor = "rgba(255,255,255,0.9)"; //WHITE

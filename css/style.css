@@ -88,8 +88,8 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-color: #fff; */
-  background-color: rgba(255, 255, 255, 0.9); /*IFENKIUL 7.07.2020*/
+  /* background-color: #fff; IFENKIUL 7.07.2020*/
+  /* background-color: rgba(255, 255, 255, 0.9); IFENKIUL 7.07.2020 */
   z-index: 2;
 }
 

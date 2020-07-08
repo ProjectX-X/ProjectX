@@ -1,13 +1,13 @@
 //form
 const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-const name = document.querySelector('#name');
-const email = document.querySelector('#email');
-const subject = document.querySelector('#subject');
-const budget = document.querySelector('#budget');
-const message = document.querySelector('#message');
-const errorMsg = document.querySelector('.error-form');
+const name = document.querySelector("#name");
+const email = document.querySelector("#email");
+const subject = document.querySelector("#subject");
+const budget = document.querySelector("#budget");
+const message = document.querySelector("#message");
+const errorMsg = document.querySelector(".error-form");
 
-let started = document.querySelector('.started');
+let started = document.querySelector(".started");
 started.addEventListener("click", function () {
   console.log(document.querySelector("#" + started.dataset.name));
   window.scrollTo({
@@ -19,7 +19,7 @@ started.addEventListener("click", function () {
 });
 
 function checkError(field, isRequired = false, regex) {
-  errorMsg.classList.add('hidden');
+  errorMsg.classList.add("hidden");
   if (isRequired && !field.value) {
     field.classList.add("error-input");
     return 1;
@@ -56,13 +56,13 @@ function submitForm(e) {
     email: email,
     subject: subject,
     budget: budget,
-    message: message
+    message: message,
   });
 
   // отправим данные
   let xhr = new XMLHttpRequest();
   xhr.open("POST", "tbd");
-  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.setRequestHeader("Content-Type", "application/json");
   xhr.send(json);
 
   xhr.onload = () => {
@@ -71,99 +71,112 @@ function submitForm(e) {
     if (xhr.status === 200) {
       document.querySelector(".form-block").classList.add("sent");
     } else {
-      errorMsg.classList.remove('hidden');
+      errorMsg.classList.remove("hidden");
     }
-  }
+  };
 }
 
 name.addEventListener("blur", function () {
   checkError(name, true);
-})
+});
 email.addEventListener("blur", function () {
   checkError(email, true, emailRegex);
-})
+});
 subject.addEventListener("blur", function () {
   checkError(subject);
-})
+});
 budget.addEventListener("blur", function () {
   checkError(budget);
-})
+});
 message.addEventListener("blur", function () {
   checkError(message, true);
-})
-document.querySelector('._submit').addEventListener('click', submitForm, false);
+});
+document.querySelector("._submit").addEventListener("click", submitForm, false);
 
 // ================slider settings=========================
-$(function(){
-    $('.slider__team').slick({
-        slidesToShow: 4,
-        infinite: true,
-        slidesToScroll: 4,
-        prevArrow: '.button-arrow-prev',
-        nextArrow: '.button-arrow-next',
-        responsive: [
-          {
-            breakpoint: 959,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3
-            }
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 500,
-            settings: {
-              arrows: true,
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-    });
+$(function () {
+  $(".slider__team").slick({
+    slidesToShow: 4,
+    infinite: true,
+    slidesToScroll: 4,
+    prevArrow: ".button-arrow-prev",
+    nextArrow: ".button-arrow-next",
+    responsive: [
+      {
+        breakpoint: 959,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          arrows: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
 });
 // =============smooth scroll to the anchor===============
-const anchors = document.querySelectorAll('.header__body a[href*="#"]')
+const anchors = document.querySelectorAll('.header__body a[href*="#"]');
 
 for (let anchor of anchors) {
-
-anchor.addEventListener("click", function(event){
-event.preventDefault();
-const blockID = anchor.getAttribute('href')
-document.querySelector('' + blockID).scrollIntoView({
-	behavior: "smooth",
-	block: "center"
-});
-});
-
+  anchor.addEventListener("click", function (event) {
+    event.preventDefault();
+    const blockID = anchor.getAttribute("href");
+    document.querySelector("" + blockID).scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+  });
 }
 // ================Change the color of menu links===========
-let anchorArr = document.getElementsByClassName('header__link');
+let anchorArr = document.getElementsByClassName("header__link");
 let prevLink = "";
-  for (let i = 0; i < anchorArr.length; i++) {
-    anchorArr[i].onclick = function(){
-      if (prevLink != "" && prevLink != this)
-      {
-        prevLink.className = "header__link";
-      }
-      this.className = "header__link selected";
-      prevLink = this;
+for (let i = 0; i < anchorArr.length; i++) {
+  anchorArr[i].onclick = function () {
+    if (prevLink != "" && prevLink != this) {
+      prevLink.className = "header__link";
     }
-  }
+    this.className = "header__link selected";
+    prevLink = this;
+  };
+}
 // =============Burger-menu===============================
-  $('.header__burger').click(function(event){
-    $('.header__burger, .header__menu').toggleClass('active');
-    $('body').toggleClass('lock');
-  });
-  $('.header__list').click(function(event){
-    $('.header__burger, .header__menu').removeClass('active');
-    $('body').removeClass('lock');
-  });
+$(".header__burger").click(function (event) {
+  $(".header__burger, .header__menu").toggleClass("active");
+  $("body").toggleClass("lock");
+});
+$(".header__list").click(function (event) {
+  $(".header__burger, .header__menu").removeClass("active");
+  $("body").removeClass("lock");
+});
 // =======================================================
- 
-// =======================================================
+
+// =======================================HEADER-CHANGING BG-COLOR @Ifenkiul 8.07.2020
+const toolbar = document.querySelector(".header");
+
+window.addEventListener("scroll", function () {
+  const windowScroll = window.scrollY;
+  if (windowScroll < 1000) {
+    toolbar.style.backgroundColor = "rgba(255,255,255,0.9)"; //WHITE
+  } else if (windowScroll > 1000 && windowScroll < 2000) {
+    toolbar.style.backgroundColor = "rgba(246, 71, 71, 0.9)"; //RED
+  } else if (windowScroll > 2000 && windowScroll < 3000) {
+    toolbar.style.backgroundColor = "rgba(0,250,154, 0.9)"; //GREEN
+  } else if (windowScroll > 3000 && windowScroll < 4000) {
+    toolbar.style.backgroundColor = "rgba(190, 144, 212,0.9)"; //PURPLE
+  } else if (windowScroll > 4000) {
+    toolbar.style.backgroundColor = "rgba(245, 171, 53, 0.9)"; //ORANGE
+  }
+});

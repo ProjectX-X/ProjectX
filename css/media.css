@@ -107,11 +107,11 @@
     transform: scale(0);
   }
   .header__burger.active::before {
-    transform: rotate(-135deg); /*-135deg*/
+    transform: rotate(-135deg);
     top: 20px; /*9px*/
   }
   .header__burger.active::after {
-    transform: rotate(135deg); /*135deg*/
+    transform: rotate(135deg); 
     bottom: 20px; /*9px*/
   }
   .header__menu {
@@ -184,17 +184,59 @@
 }
 
 @media (max-width: 500px) {
+  /* Header */
+  .header__logo {
+    font-size: 36px;
+  }
+  .header__body {
+    height: 60px; /*50px*/
+  }
+  .header__burger{
+    width: 45px;
+    height: 30px;
+  }
+  .header__burger span{
+    top: 14px;
+    height: 4px;
+  }
+  .header__burger::before,
+  .header__burger::after{
+    height: 4px;
+  }
+  .header__burger.active::before{
+    top: 13px;
+  }
+  .header__burger.active::after{
+    bottom: 13px;
+  }
+  .header__list{
+    padding-top: 10px;
+  }
+  .about__right__rainbow.header__list--rainbow{
+    top: -10px;
+  }
+  .home {
+    margin-top: 60px;
+  }
+    /* Header-End */
   /* Team */
+  .team {
+    height: 400px;
+  }
+  .team__inner-title{
+    padding-top: 35px;
+    font-size: 27px;
+    line-height: 28px;
+    margin-bottom: 18px;
+  }
+  .slider__team-foto {
+    margin: 0 auto 30px;
+  }
   .slick-arrow {
     display: block;
   }
   /* Team-End */
 
-}
-@media (max-width: 321px) {
- .home-title{
-   font-size: 17px;
- }
 }
 
 @media (max-width: 321px) {
@@ -202,10 +244,41 @@
   .header__logo {
     font-size: 30px;
   }
+  .header__body {
+    height: 50px;
+  }
+  .header__burger{
+    width: 35px;
+    height: 25px;
+  }
+  .header__burger span{
+    top: 11px;
+  }
+  .header__burger.active::before{
+    top: 10px;
+  }
+  .header__burger.active::after{
+    bottom: 10px;
+  }
+  .header__list{
+    padding-top: 0;
+  }
+  .about__right__rainbow.header__list--rainbow{
+    top: -20px;
+  }
   .header__link {
     font-size: 18px;
   }
   /* Header-burgerEnd */
+
+  /* Home */
+  .home {
+    margin-top: 50px; /* Maksim - to prevent the Home block from overriding the menu*/
+  }
+  .home-title{
+    font-size: 17px;
+  }
+  /* Home-End */
 }
 
 @media (min-width: 768px) {

@@ -168,15 +168,15 @@ const toolbar = document.querySelector(".header");
 
 window.addEventListener("scroll", function () {
   const windowScroll = window.scrollY;
-  if (windowScroll < 1000) {
-    toolbar.style.backgroundColor = "rgba(255,255,255,0.9)"; //WHITE
-  } else if (windowScroll > 1000 && windowScroll < 2000) {
+  if (windowScroll > 1000 && windowScroll < 2000) {
     toolbar.style.backgroundColor = "rgba(246, 71, 71, 0.9)"; //RED
   } else if (windowScroll > 2000 && windowScroll < 3000) {
     toolbar.style.backgroundColor = "rgba(0,250,154, 0.9)"; //GREEN
   } else if (windowScroll > 3000 && windowScroll < 4000) {
     toolbar.style.backgroundColor = "rgba(190, 144, 212,0.9)"; //PURPLE
-  } else if (windowScroll > 4000) {
+  } else if (windowScroll > 4000 && windowScroll < 5000) {
     toolbar.style.backgroundColor = "rgba(245, 171, 53, 0.9)"; //ORANGE
+  } else {
+    toolbar.style.backgroundColor = "rgba(255,255,255,0.9)"; //WHITE
   }
 });

@@ -96,6 +96,7 @@ document.querySelector("._submit").addEventListener("click", submitForm, false);
 // ================slider settings=========================
 $(function () {
   $(".slider__team").slick({
+    waitForAnimate: false,
     slidesToShow: 4,
     infinite: true,
     slidesToScroll: 4,
@@ -119,8 +120,11 @@ $(function () {
       {
         breakpoint: 500,
         settings: {
-          arrows: true,
-          slidesToShow: 1,
+          arrows: false,
+          centerMode: true,
+          variableWidth: true,
+          touchThreshold: 10,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },

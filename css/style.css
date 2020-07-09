@@ -89,7 +89,7 @@ ul {
   width: 100%;
   height: 100%;
   /* background-color: #fff; IFENKIUL 7.07.2020*/
-  /* background-color: rgba(255, 255, 255, 0.9); IFENKIUL 7.07.2020 */
+  background-color: rgba(255, 255, 255, 0.9); /*IFENKIUL 7.07.2020 */
   z-index: 2;
 }
 
@@ -422,12 +422,10 @@ ul {
 .team {
   height: 784px;
 }
-
 .team__inner {
   align-items: center;
   text-align: center;
 }
-
 .team__inner-title {
   padding-top: 115px;
   font-size: 60px;
@@ -446,63 +444,53 @@ ul {
   margin: 0 auto;
   padding: 0 40px;
 }
-
+.slick-track{
+  display: flex;
+}
 .slider__team-item {
   text-align: center;
 }
-
 .slider__team-foto {
   width: 200px;
   height: 200px;
   margin: 0 auto 20px;
 }
-
 .slider__team-foto img {
   align-items: center;
   border-radius: 50%;
 }
-
 .slider__team-name-red {
   color: var(--color-focus-red);
 }
-
 .slider__team-name-green {
   color: var(--color-focus-green);
 }
-
 .slider__team-name-purple {
   color: var(--color-focus-purple);
 }
-
 .slider__team-name-orange {
   color: var(--color-focus-orange);
 }
-
 .slider__team-name {
   text-transform: uppercase;
   font-size: 17px;
   line-height: 21px;
   margin-bottom: 15px;
 }
-
 .slider__team-position {
   color: #616161;
   font-size: 13px;
   text-transform: uppercase;
 }
-
 .slick-arrow {
   position: relative;
 }
-
 .slick-arrow:before {
   display: none;
 }
-
 button {
   outline: none;
 }
-
 .button-arrow-prev {
   background-image: url(../img/team/arrow-left.png);
   background-repeat: no-repeat;
@@ -517,7 +505,6 @@ button {
   cursor: pointer;
   /* padding-left: 26px; */
 }
-
 .button-arrow-next {
   background-image: url(../img/team/arrow-right.png);
   background-repeat: no-repeat;

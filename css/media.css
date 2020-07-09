@@ -196,7 +196,7 @@
     height: 30px;
   }
   .header__burger span{
-    top: 14px;
+    top: 13px;
     height: 4px;
   }
   .header__burger::before,
@@ -229,12 +229,22 @@
     line-height: 28px;
     margin-bottom: 18px;
   }
+  .slick-list {
+    overflow: hidden;
+  }
+  .slider__team-item {
+    opacity: .4;;
+  }
+  .slider__team-item.slick-center {
+    transition: all .3s ease .3s;
+    opacity: 1;
+  }
   .slider__team-foto {
-    margin: 0 auto 30px;
+    margin: 0 10px 30px;
   }
-  .slick-arrow {
+  /* .slick-arrow {
     display: block;
-  }
+  } */
   /* Team-End */
 
 }

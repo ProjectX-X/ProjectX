@@ -196,37 +196,43 @@ window.addEventListener("scroll", function () {
   const windowScroll = window.scrollY;
 
   if (windowScroll >= aboutCoordinates && windowScroll < ourFocusCoordinates) {
-    toolbar.style.backgroundColor = "rgba(246, 71, 71, 0.9)"; //RED
+    toolbar.style.backgroundColor = "rgba(246, 71, 71, 0.8)"; //RED
   } else if (
     windowScroll >= ourFocusCoordinates &&
     windowScroll < teamCoordinates
   ) {
-    toolbar.style.backgroundColor = "rgba(0,250,154, 0.9)"; //GREEN
+    toolbar.style.backgroundColor = "rgba(0,250,154, 0.8)"; //GREEN
   } else if (
     windowScroll >= teamCoordinates &&
     windowScroll < workStepsCoordinates
   ) {
-    toolbar.style.backgroundColor = "rgba(190, 144, 212,0.9)"; //PURPLE
+    toolbar.style.backgroundColor = "rgba(190, 144, 212,0.8)"; //PURPLE
   } else if (
     windowScroll >= workStepsCoordinates &&
     windowScroll < selectCoordinates
   ) {
-    toolbar.style.backgroundColor = "rgba(245, 171, 53, 0.9)"; //ORANGE
+    toolbar.style.backgroundColor = "rgba(245, 171, 53, 0.8)"; //ORANGE
   } else {
-    toolbar.style.backgroundColor = "rgba(255,255,255,0.9)"; //WHITE
+    toolbar.style.backgroundColor = "rgba(255,255,255,0.8)"; //WHITE
   }
 });
 
-// =======================================DIFFERENT LANGUAGES @Ifenkiul 8.07.2020
-const ukrLang = {
-  "a[href='#about']": "ПРО НАС",
-  "a[href='#focus']": "ФОКУС",
-  "a[href='#team']": "КОМАНДА",
-  "a[href='#worksteps']": "КРОКИ",
-  "a[href='#select']": "ОБРАТИ НАС",
-  "a[href='#order']": "ЗАМОВИТИ",
+// =======================================DIFFERENT LANGUAGES @Ifenkiul 9.07.2020
+const languagesForPage = {
+  "a[href='#about']": ["ABOUT US", "ПРО НАС"],
+  "a[href='#focus']": ["OUR FOCUS", "ФОКУС"],
+  "a[href='#team']": ["OUR TEAM", "КОМАНДА"],
+  "a[href='#worksteps']": ["WORK STEPS", "КРОКИ"],
+  "a[href='#select']": ["WHY CHOOSE US", "ОБРАТИ НАС"],
+  "a[href='#order']": ["GET IN TOUCH", "ЗАМОВИТИ"],
 };
-for (let key in ukrLang) {
-  console.log(key);
-  document.querySelector(key).textContent = ukrLang[key];
-}
+// sessionStorage.setItem("languageChosen", "UA");
+
+const changeLanguage = function () {
+  const languageSet = sessionStorage.getItem("languageChosen") === "UA" ? 1 : 0;
+
+  for (let key in languagesForPage) {
+    document.querySelector(key).textContent =
+      languagesForPage[key][languageSet];
+  }
+};

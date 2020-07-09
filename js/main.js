@@ -167,6 +167,12 @@ $(".header__list").click(function (event) {
 const toolbar = document.querySelector(".header");
 const aboutCoordinates =
   document.querySelector(".about").getBoundingClientRect().top + window.scrollY;
+console.log(
+  "top " + document.querySelector(".header").getBoundingClientRect().top
+);
+console.log(
+  "bottom " + document.querySelector(".header").getBoundingClientRect().bottom
+);
 
 const ourFocusCoordinates =
   document.querySelector(".focus").getBoundingClientRect().top + window.scrollY;
@@ -206,3 +212,17 @@ window.addEventListener("scroll", function () {
     toolbar.style.backgroundColor = "rgba(255,255,255,0.9)"; //WHITE
   }
 });
+
+// =======================================DIFFERENT LANGUAGES @Ifenkiul 8.07.2020
+const ukrLang = {
+  "a[href='#about']": "ПРО НАС",
+  "a[href='#focus']": "ФОКУС",
+  "a[href='#team']": "КОМАНДА",
+  "a[href='#worksteps']": "КРОКИ",
+  "a[href='#select']": "ОБРАТИ НАС",
+  "a[href='#order']": "ЗАМОВИТИ",
+};
+for (let key in ukrLang) {
+  console.log(key);
+  document.querySelector(key).textContent = ukrLang[key];
+}

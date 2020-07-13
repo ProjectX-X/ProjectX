@@ -66,8 +66,6 @@ function submitForm(e) {
   xhr.send(json);
 
   xhr.onload = () => {
-    console.log(xhr);
-
     if (xhr.status === 200) {
       document.querySelector(".form-block").classList.add("sent");
     } else {
@@ -92,6 +90,99 @@ message.addEventListener("blur", function () {
   checkError(message, true);
 });
 document.querySelector("._submit").addEventListener("click", submitForm, false);
+
+//lang
+let arrLang;
+//получаем JSON
+fetch('./lang.json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    arrLang = data;
+    initLang();
+  });
+
+initLang = () => {
+  let currentLang = sessionStorage.getItem('language') || 'eng';
+  document.querySelector('.lang[value=' + currentLang + ']').checked = true;
+  changeLang(currentLang);
+  listenLang();
+}
+
+//Слушатель на переключатель языка
+listenLang = () => {
+  let targetInput = document.querySelectorAll('.lang');
+  targetInput.forEach((item) => {
+    item.addEventListener('change', function (e) {
+      changeLang(e.target.value);
+      sessionStorage.setItem('language', e.target.value);
+    });
+  })
+}
+
+//Замена текста
+changeLang = (lang) => {
+  const d = document;
+  const text = arrLang[lang];
+
+  d.querySelectorAll('.header__link')
+    .forEach((item, i) => {
+      item.textContent = text.header[i];
+    })
+
+  d.querySelector('.home-title').textContent = text.home.title;
+  d.querySelector('.started').textContent = text.home.button;
+
+  d.querySelector('[data-js="about-title"]').textContent = text.about.title;
+  d.querySelectorAll('[data-js="about-p"]')
+    .forEach((item, i) => {
+      item.textContent = text.about.paragraph[i];
+    })
+
+  d.querySelector('[data-js="focus-title"]').textContent = text.focus.title;
+  d.querySelectorAll('.focus__bottom-item')
+    .forEach((item, i) => {
+      item.querySelector('h3').textContent = text.focus.items[i].title;
+      item.querySelector('p').textContent = text.focus.items[i].text;
+    })
+
+  d.querySelector('.team__inner-title').textContent = text.team.title;
+  d.querySelectorAll('.slider__team-item:not(.slick-cloned)')
+    .forEach((item, i) => {
+      item.querySelector('.slider__team-name--firstname').textContent = text.team.items[i].name;
+      item.querySelector('.slider__team-name--surname').textContent = text.team.items[i].surname;
+      item.querySelector('.slider__team-position').textContent = text.team.items[i].position;
+    })
+
+  d.querySelector('[data-js="step-title"]').textContent = text.steps.title;
+  d.querySelectorAll('.wrap_tb')
+    .forEach((item, i) => {
+      item.querySelector('.title_bl').textContent = text.steps.items[i].title;
+      item.querySelector('.descr').textContent = text.steps.items[i].text;
+    })
+  d.querySelector('[data-js="select-title"]').textContent = text.choose.title;
+  d.querySelector('[data-js="select-description"]').textContent = text.choose.description;
+  d.querySelectorAll('.blockW')
+    .forEach((item, i) => {
+      item.querySelector('.titleW').innerHTML = text.choose.items[i].title;
+      item.querySelector('.descrW').textContent = text.choose.items[i].text;
+    })
+
+  d.querySelector('.order-title').textContent = text.order.title;
+  d.querySelector('._submit').value = text.order.button;
+  d.querySelector('.error-form').textContent = text.order.error;
+  d.querySelector('[data-js="form-sent"]').innerHTML = text.order.send;
+
+
+  d.querySelectorAll('.form-item-container')
+    .forEach((item) => {
+      let input = item.querySelector('.form-item, .form-message');
+      let error = item.querySelector('.error-input-add');
+      input.placeholder = text.order[input.id];
+      if (error) error.textContent = text.order.required;
+    })
+}
 
 // ================slider settings=========================
 $(function () {
@@ -218,21 +309,21 @@ window.addEventListener("scroll", function () {
 });
 
 // =======================================DIFFERENT LANGUAGES @Ifenkiul 9.07.2020
-const languagesForPage = {
-  "a[href='#about']": ["ABOUT US", "ПРО НАС"],
-  "a[href='#focus']": ["OUR FOCUS", "ФОКУС"],
-  "a[href='#team']": ["OUR TEAM", "КОМАНДА"],
-  "a[href='#worksteps']": ["WORK STEPS", "КРОКИ"],
-  "a[href='#select']": ["WHY CHOOSE US", "ОБРАТИ НАС"],
-  "a[href='#order']": ["GET IN TOUCH", "ЗАМОВИТИ"],
-};
-// sessionStorage.setItem("languageChosen", "UA");
-
-const changeLanguage = function () {
-  const languageSet = sessionStorage.getItem("languageChosen") === "UA" ? 1 : 0;
-
-  for (let key in languagesForPage) {
-    document.querySelector(key).textContent =
-      languagesForPage[key][languageSet];
-  }
-};
+// const languagesForPage = {
+//   "a[href='#about']": ["ABOUT US", "ПРО НАС"],
+//   "a[href='#focus']": ["OUR FOCUS", "ФОКУС"],
+//   "a[href='#team']": ["OUR TEAM", "КОМАНДА"],
+//   "a[href='#worksteps']": ["WORK STEPS", "КРОКИ"],
+//   "a[href='#select']": ["WHY CHOOSE US", "ОБРАТИ НАС"],
+//   "a[href='#order']": ["GET IN TOUCH", "ЗАМОВИТИ"],
+// };
+// // sessionStorage.setItem("languageChosen", "UA");
+//
+// const changeLanguage = function () {
+//   const languageSet = sessionStorage.getItem("languageChosen") === "UA" ? 1 : 0;
+//
+//   for (let key in languagesForPage) {
+//     document.querySelector(key).textContent =
+//       languagesForPage[key][languageSet];
+//   }
+// };

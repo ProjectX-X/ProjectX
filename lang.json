@@ -1,0 +1,334 @@
+{
+	"ua": {
+		"header": [
+			"ДОДОМУ",
+			"Про нас",
+			"Наші цілі",
+			"Команда",
+			"Етапи співпраці",
+			"Наші переваги",
+			"Контакти"
+		],
+		"home": {
+			"title": "РОЗРОБКА КРЕАТИВНИХ САЙТІВ",
+			"button": "ПОЧНІМО"
+		},
+		"about": {
+			"title": "Про нас",
+			"paragraph": [
+				"Наша студія – це команда професіоналів з різних галузей, які дружно працюють разом.",
+				"Ми є справжніми ентузіастами своєї справи, тому, довірившись нам, Ви можете бути впевнені, що робота буде виконана на найвищому рівні."
+			]
+		},
+		"focus": {
+			"title": "Наші цілі",
+			"items": [
+				{
+					"title": "Дизайн",
+					"text": "Створення користувацьких інтерфейсів, дизайну, графіки для проектів різної складності. Ми готові виконати ваші дизайнерські побажання."
+				},
+				{
+					"title": "Розробка",
+					"text": "Створення сайтів різної складності, від лендингів та сайтів-візиток до корпоративних сайтів та інтернет-магазинів."
+				},
+				{
+					"title": "Контент",
+					"text": "Готові наповнити Ваш ресурс потрібною інформацією – тексти, фото, відео, товари, ціни тощо."
+				},
+				{
+					"title": "Адаптивність",
+					"text": "Щоб охопити максимальну аудиторію, створюємо адаптивність для комфортного використання сайтів з будь-якого девайсу."
+				}
+			]
+		},
+		"team": {
+			"title": "Команда",
+			"items": [
+				{
+					"name": "Руслан",
+					"surname": "Dergachev",
+					"position": "project manager"
+				},
+				{
+					"name": "Максим",
+					"surname": "Добровольський",
+					"position": "front-end dev"
+				},
+				{
+					"name": "Лілія",
+					"surname": "Левда",
+					"position": "front-end dev"
+				},
+				{
+					"name": "Андрій",
+					"surname": "Mordyuk",
+					"position": "copywriting"
+				},
+				{
+					"name": "БАТИРБЕК",
+					"surname": "CHERUSHEV",
+					"position": "front-end dev"
+				},
+				{
+					"name": "Влад",
+					"surname": "Dobrydin",
+					"position": "front-end dev"
+				},
+				{
+					"name": "Вікторія",
+					"surname": "Скрипник",
+					"position": "copywriting"
+				},
+				{
+					"name": "Леся",
+					"surname": "Stefaniv",
+					"position": "qa"
+				},
+				{
+					"name": "Євген",
+					"surname": "Засадко",
+					"position": "designer"
+				},
+				{
+					"name": "Андрій",
+					"surname": "Mosin",
+					"position": "back-end dev"
+				}
+			]
+		},
+		"steps": {
+			"title": "Етапи співпраці",
+			"items": [
+				{
+					"title": "Аналіз вимог",
+					"text": "Клієнт заповнює детальний бриф із даними про проект; ми обговорюємо та узгоджуємо всі деталі, ідеї, терміни виконання замовлення."
+				},
+				{
+					"title": "Дослідження і планування",
+					"text": "Діяти без плану – зусилля на вітер. Для успіху ми все добре сплануємо, вивчивши ситуацію на ринку. "
+				},
+				{
+					"title": "Каркас і дизайн",
+					"text": "Створюємо дизайн з урахуванням різних мобільних пристроїв, користувацького досвіду та максимальної зручності використання."
+				},
+				{
+					"title": "Розробка",
+					"text": "Ми розробляємо динамічні сайти з адаптивною версткою для будь-якого ґаджета. Ми готові до реалізації найсучаснішої ідеї."
+				}
+			]
+		},
+		"choose": {
+			"title": "Наші переваги",
+			"description": "Обравши нас, Ви обираєте якісне та надійне обслуговування",
+			"items": [
+				{
+					"title": "Розвиток<br> бізнесу",
+					"text": "Наша діяльність спрямована на створення продукту, який відкриває нові горизонти для вашого бізнесу в майбутньому."
+				},
+				{
+					"title": "Швидка<br> підтримка",
+					"text": "Ми постійно на зв'язку із нашими клієнтами. Готові надати якісну консультацію та підтримку у будь-який час. "
+				},
+				{
+					"title": "Постійне<br> вдосконалення",
+					"text": "Ми працюємо в динамічних умовах, тому постійно підтримуємо, розвиваємо та вдосконалюємо наш професійний рівень."
+				},
+				{
+					"title": "Досвід",
+					"text": "Наша мета – розвиток вашого бізнесу, тому ми вибираємо найефективніші інструменти в кожному конкретному випадку."
+				},
+				{
+					"title": "Дотримання<br> строків",
+					"text": "Ми дуже цінуємо ваш час, тому надаємо реальну оцінку термінів і стежимо за їхнім дотриманням."
+				},
+				{
+					"title": "Забезпечення<br> якості",
+					"text": "У процесі роботи ми приділяємо увагу тестуванню всіх деталей. Це допомагає нам максимально задовольнити потреби клієнтів."
+				}
+			]
+		},
+		"order": {
+			"title": "Контакти",
+			"button": "НАДІСЛАТИ",
+			"name": "* Ваше ім’я",
+			"email": "* Ваш Email",
+			"subject": "Тема",
+			"budget": "Бюджет",
+			"message": "* Ваше повідомлення",
+			"required": "Це обов’язкове поле",
+			"error": "Будь-ласка спробуйте пізніше",
+			"send": "Дякуємо за контакт. <br>Ми незабаром зв’яжемося з вами.",
+			"errorContainer": {
+				"required": "Це обов’язкове поле",
+				"emailErrOne": "Email should contain the @ sign. There is no @ in the entered email address.",
+				"emailErrTwo": "Enter the part of email after the @ sign. Email address you entered is incomplete."
+			}
+		}
+	},
+	"eng": {
+		"header": [
+			"HOME",
+			"ABOUT US",
+			"OUR FOCUS",
+			"TEAM",
+			"WORK STEPS",
+			"WHY CHOOSE US",
+			"GET IN TOUCH"
+		],
+		"home": {
+			"title": "DEVELOPMENT OF CREATIVE SITES",
+			"button": "get started"
+		},
+		"about": {
+			"title": "About Us",
+			"paragraph": [
+				"Our web studio is a team of professionals in various fields who are firmly committed to working in a friendly manner.",
+				"We are true enthusiasts of our business, so if you are willing to trust us you can be sure that you will receive the state-of-the-art result."
+			]
+		},
+		"focus": {
+			"title": "Our Focus",
+			"items": [
+				{
+					"title": "DESIGN",
+					"text": "User interface design, graphics for projects of various complexity. We are ready to fulfill whatever designs that you wish."
+				},
+				{
+					"title": "DEVELOPMENT",
+					"text": "Various complexity site development, from landings and business card sites to corporate sites and internet stores."
+				},
+				{
+					"title": "CONTENT",
+					"text": "We are ready to fill your resource with the necessary information – texts, photos, videos, products, prices, etc."
+				},
+				{
+					"title": "ADAPTIVITY",
+					"text": "We create an adaptive design for comfortable using the sites from any device to reach the maximum audience."
+				}
+			]
+		},
+		"team": {
+			"title": "Team",
+			"items": [
+				{
+					"name": "Ruslan",
+					"surname": "Dergachev",
+					"position": "project manager"
+				},
+				{
+					"name": "Maksym",
+					"surname": "Dobrovolskyi",
+					"position": "front-end dev"
+				},
+				{
+					"name": "Liliia",
+					"surname": "Levda",
+					"position": "front-end dev"
+				},
+				{
+					"name": "Andrey",
+					"surname": "Mordyuk",
+					"position": "copywriting"
+				},
+				{
+					"name": "BATYRBEK",
+					"surname": "CHERUSHEV",
+					"position": "front-end dev"
+				},
+				{
+					"name": "Vlad",
+					"surname": "Dobrydin",
+					"position": "front-end dev"
+				},
+				{
+					"name": "VIKTORIIA",
+					"surname": "SKRYPNYK",
+					"position": "copywriting"
+				},
+				{
+					"name": "Lesia",
+					"surname": "Stefaniv",
+					"position": "qa"
+				},
+				{
+					"name": "Eugène",
+					"surname": "Zassadko",
+					"position": "designer"
+				},
+				{
+					"name": "Andrii",
+					"surname": "Mosin",
+					"position": "back-end dev"
+				}
+			]
+		},
+		"steps": {
+			"title": "Work Steps",
+			"items": [
+				{
+					"title": "Project Understanding",
+					"text": "The client fills out a detailed brief with project data, we discuss, agree on all the details, ideas, deadlines."
+				},
+				{
+					"title": "Research & Planning",
+					"text": "Action without vision just passes the time. For success, we plan everything according to the current market situation."
+				},
+				{
+					"title": "Wireframe & Design",
+					"text": "We design taking into account various mobile devices, user experience and maximum ease of use."
+				},
+				{
+					"title": "Development",
+					"text": "We develop dynamic sites with adaptive layout for any gadget. We are ready to implement the ground-breaking idea."
+				}
+			]
+		},
+		"choose": {
+			"title": "Why Choose Us?",
+			"description": "By choosing us, you choose quality and reliable service.",
+			"items": [
+				{
+					"title": "Business<br /> Growth",
+					"text": "Our activities are aimed at creating a product that opens new horizons for your business in the future."
+				},
+				{
+					"title": "Quick<br> Support",
+					"text": "We are constantly in touch with our customers. We are ready to provide quality advice and support at any time."
+				},
+				{
+					"title": "Ultimate<br> Perfection",
+					"text": "We work in a dynamic environment, so we constantly support, develop and improve our professional level."
+				},
+				{
+					"title": "Smart<br> Experience",
+					"text": "Our goal is to develop your business, so we choose the most efficient instruments for each case."
+				},
+				{
+					"title": "Strict<br> Deadline",
+					"text": "We value your time very much, so we provide a realistic assessment of the deadlines and monitor their implementation."
+				},
+				{
+					"title": "Quality<br> Assurance",
+					"text": "In the process of working, we pay attention to test all things. It helps us to meet customer needs best of all."
+				}
+			]
+		},
+		"order": {
+			"title": "Get in Touch",
+			"button": "SEND A MESSAGE",
+			"name": "* Your Name",
+			"email": "* Your Email",
+			"subject": "Subject",
+			"budget": "Project Budget",
+			"message": "* Your Message",
+			"required": "This field is required",
+			"error": "Please try again later",
+			"send": "Thanks for contacting. <br>We will contact you shortly.",
+			"errorContainer": {
+				"required": "This field is required",
+				"emailErrOne": "Email should contain the @ sign. There is no @ in the entered email address.",
+				"emailErrTwo": "Enter the part of email after the @ sign. Email address you entered is incomplete."
+			}
+		}
+	}
+}

@@ -157,6 +157,9 @@
   .header__link.selected{
     color: #40649b;
   }
+  .changeLang{
+    display: none;
+  }
   .home {
     margin-top: 80px;
   }

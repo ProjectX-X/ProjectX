@@ -143,6 +143,22 @@ ul {
   position: relative;
   z-index: 3;
 }
+.changeLang{
+  display: flex;
+  z-index: 3;
+}
+.changeLang select{
+  border: 1px solid #ccc;
+  background-color: #999;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #fff;
+  width: 100%;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 .header__link.selected {
   color: #40649b;
 }

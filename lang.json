@@ -1,7 +1,7 @@
 {
 	"ua": {
 		"header": [
-			"ДОДОМУ",
+			"Головна",
 			"Про нас",
 			"Наші цілі",
 			"Команда",
@@ -46,7 +46,7 @@
 			"items": [
 				{
 					"name": "Руслан",
-					"surname": "Dergachev",
+					"surname": "Дергачов",
 					"position": "project manager"
 				},
 				{
@@ -61,12 +61,12 @@
 				},
 				{
 					"name": "Андрій",
-					"surname": "Mordyuk",
+					"surname": "Мордюк",
 					"position": "copywriting"
 				},
 				{
-					"name": "БАТИРБЕК",
-					"surname": "CHERUSHEV",
+					"name": "Батирбек",
+					"surname": "Черушев",
 					"position": "front-end dev"
 				},
 				{
@@ -81,7 +81,7 @@
 				},
 				{
 					"name": "Леся",
-					"surname": "Stefaniv",
+					"surname": "Стефанів",
 					"position": "qa"
 				},
 				{

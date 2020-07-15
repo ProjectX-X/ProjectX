@@ -170,13 +170,25 @@ ul {
 
 /* ======Home===== */
 .home {
-  background-image: url("../img/home.png");
+  background: url(../img/compressed//testBlur.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 100px 0;
   box-sizing: border-box;
   margin-top: 75px;
+}
+.home-backIm {
+  animation: blurImage 0.8s ease-in-out;
+  background: url("../img/home.png");
+}
+@keyframes blurImage {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 991.98px) {
   .home {

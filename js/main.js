@@ -327,3 +327,8 @@ window.addEventListener("scroll", function () {
 //       languagesForPage[key][languageSet];
 //   }
 // };
+
+
+window.onload = () => {
+  document.querySelector(".home").classList.add("home-backIm");
+};

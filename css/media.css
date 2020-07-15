@@ -171,7 +171,7 @@
     height: 474px;
   }
   .team__inner-title {
-    font-size: 36px;
+    /*font-size: 36px;*/
     line-height: 36px;
     padding-top: 63px;
     margin-bottom: 28px;
@@ -228,7 +228,7 @@
   }
   .team__inner-title{
     padding-top: 35px;
-    font-size: 27px;
+    /*font-size: 27px;*/
     line-height: 28px;
     margin-bottom: 18px;
   }
@@ -372,11 +372,10 @@
 
   /* Order */
   .order {
-    padding: 50px 10px;
+    padding: 60px 10px;
   }
   .order-title {
-    font-size: 48px;
-    margin-bottom: 26px;
+    font-size: 36px;
   }
   .order-description {
     margin-bottom: 30px;
@@ -431,7 +430,6 @@
     padding: 90px 60px;
   }
   .about__right__container-text h2 {
-    font-size: 400%;
     margin-bottom: 30px;
   }
 
@@ -443,7 +441,6 @@
   }
 
   .focus h2 {
-    font-size: 400%;
     margin-bottom: 30px;
   }
 
@@ -473,7 +470,7 @@
 
   /* Order */
   .order {
-    padding: 140px 5px 100px;
+    padding: 60px 5px;
   }
   .order-container {
     width: 66%;
@@ -481,7 +478,6 @@
   }
   .order-title {
     font-size: 60px;
-    margin-bottom: 36px;
   }
   .order-description {
     font-size: 18px;
@@ -547,10 +543,7 @@
   .why_content .blockW {
     width: 40%;
   }
-  
-  .worksteps h2 {
-    font-size: 36px;
-  }
+
   
   .worksteps p {
 	font-size: 18px;  
@@ -606,10 +599,7 @@
     padding-top: 3%;
     padding-bottom: 3%;
   }
-  
-  .worksteps h2 {
-    font-size: 25px;
-  }
+
   
   .worksteps p {
 	font-size: 16px;  

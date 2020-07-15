@@ -143,11 +143,11 @@ ul {
   position: relative;
   z-index: 3;
 }
-.changeLang{
+.changeLang {
   display: flex;
   z-index: 3;
 }
-.changeLang select{
+.changeLang select {
   border: 1px solid #ccc;
   background-color: #999;
   font-family: "Poppins", sans-serif;
@@ -177,6 +177,11 @@ ul {
   padding: 100px 0;
   box-sizing: border-box;
   margin-top: 75px;
+}
+@media screen and (max-width: 991.98px) {
+  .home {
+    background-image: url(../img/compressed/home-min.png);
+  }
 }
 
 .home-container {
@@ -267,6 +272,11 @@ ul {
   -ms-flex-align: center;
   align-items: center;
   border: 15px solid #cccccc;
+}
+@media screen and (max-width: 991.98px) {
+  .about__left {
+    background-image: url(../img/compressed/aboutUs-min.png);
+  }
 }
 
 .about__right {
@@ -460,7 +470,7 @@ ul {
   margin: 0 auto;
   padding: 0 40px;
 }
-.slick-track{
+.slick-track {
   display: flex;
 }
 .slider__team-item {
@@ -713,6 +723,11 @@ button {
   background-size: cover;
   padding: 20px 10px;
   box-sizing: border-box;
+}
+@media screen and (max-width: 991.98px) {
+  .order {
+    background-image: url("../img/compressed/getInTouch-min.png");
+  }
 }
 
 .order-container {

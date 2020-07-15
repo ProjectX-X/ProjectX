@@ -170,7 +170,7 @@ ul {
 
 /* ======Home===== */
 .home {
-  background: url(../img/compressed//testBlur.jpg);
+  background-image: url(../img/compressed//testBlur.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -180,7 +180,13 @@ ul {
 }
 .home-backIm {
   animation: blurImage 0.8s ease-in-out;
-  background: url("../img/home.png");
+  background-image: url("../img/home.png");
+}
+
+@media screen and (max-width: 991.98px) {
+  .home-backIm {
+    background-image: url(../img/compressed/home-min.png);
+  }
 }
 @keyframes blurImage {
   0% {
@@ -190,12 +196,6 @@ ul {
     opacity: 1;
   }
 }
-@media screen and (max-width: 991.98px) {
-  .home {
-    background-image: url(../img/compressed/home-min.png);
-  }
-}
-
 .home-container {
   display: flex;
   flex-direction: column;

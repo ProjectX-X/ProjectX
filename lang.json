@@ -167,13 +167,13 @@
 	},
 	"eng": {
 		"header": [
-			"HOME",
-			"ABOUT US",
-			"OUR FOCUS",
-			"TEAM",
-			"WORK STEPS",
-			"WHY CHOOSE US",
-			"GET IN TOUCH"
+			"Home",
+			"About us",
+			"Our focus",
+			"Team",
+			"Work steps",
+			"Why choose us",
+			"Get in touch"
 		],
 		"home": {
 			"title": "DEVELOPMENT OF CREATIVE SITES",

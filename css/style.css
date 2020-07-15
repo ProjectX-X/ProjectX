@@ -45,7 +45,7 @@ body {
 /* =====================================  */
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 27px;
   font-size: 15px;
 }
@@ -115,6 +115,7 @@ ul {
 
 .header__list {
   font-size: 16px;
+  text-transform: capitalize;
   line-height: 18px;
   font-weight: 400;
   display: flex;
@@ -162,7 +163,7 @@ ul {
 .changeLang select {
   border: 1px solid #ccc;
   background-color: #999;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   color: #fff;
   width: 100%;
@@ -814,7 +815,7 @@ button {
   border: 2px solid transparent;
   color: #666666;
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .form-item::placeholder,

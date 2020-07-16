@@ -65,7 +65,8 @@ ul {
 /* li {
   display: inline-block;
 } */
-.container {
+.container,
+#select .container{
   max-width: 1170px;
   margin: 0 auto;
   padding: 30px 15px;
@@ -80,7 +81,8 @@ ul {
   padding: 30px 15px 16px;
 }
 @media (min-width: 768px) {
-  .container{
+  .container,
+  #select .container{
     padding: 60px 15px;
   }
   .about .container{
@@ -93,6 +95,14 @@ ul {
 @media (min-width: 960px) {
   .worksteps .container{
     padding: 60px 15px 30px;
+  }
+  #select .container{
+    padding: 60px 15px;
+  }
+}
+@media (min-width: 1050px) {
+  .worksteps .container{
+    padding: 60px 15px;
   }
 }
 

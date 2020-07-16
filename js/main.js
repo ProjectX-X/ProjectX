@@ -162,7 +162,6 @@ changeLang = (lang) => {
       item.querySelector('.descr').textContent = text.steps.items[i].text;
     })
   d.querySelector('[data-js="select-title"]').textContent = text.choose.title;
-  d.querySelector('[data-js="select-description"]').textContent = text.choose.description;
   d.querySelectorAll('.blockW')
     .forEach((item, i) => {
       item.querySelector('.titleW').innerHTML = text.choose.items[i].title;

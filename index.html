@@ -429,11 +429,12 @@
             <form name="orderForm">
               <div class="form-item-container">
                 <input type="text" placeholder="* Your Name" id="name" class="form-item" required />
-                <span class="error-input-add">This field is required</span>
+                <span class="error-input-add required" data-js="required">This field is required</span>
               </div>
               <div class="form-item-container">
                 <input type="email" placeholder="* Your Email" id="email" class="form-item" required />
-                <span class="error-input-add">This field is required</span>
+                <span class="error-input-add required" data-js="required">This field is required</span>
+                <span class="error-input-add regex" data-js="emailErrOne">ldldl</span>
               </div>
               <div class="form-item-container d-none">
                 <input type="text" placeholder="Subject" id="subject" class="form-item" />
@@ -443,7 +444,7 @@
               </div>
               <div class="form-item-container message">
                 <textarea class="form-message" placeholder="* Your Message" id="message" required></textarea>
-                <span class="error-input-add">This field is required</span>
+                <span class="error-input-add required" data-js="required">This field is required</span>
               </div>
               <input type="submit" value="send a message" class="button _submit" />
             </form>

@@ -5,9 +5,9 @@
 			"Про нас",
 			"Наші цілі",
 			"Команда",
-			"Етапи співпраці",
-			"Наші переваги",
-			"Контакти"
+			"робочі кроки",
+			"чому обирають нас?",
+			"зворотний зв'язок"
 		],
 		"home": {
 			"title": "РОЗРОБКА КРЕАТИВНИХ САЙТІВ",
@@ -97,7 +97,7 @@
 			]
 		},
 		"steps": {
-			"title": "Етапи співпраці",
+			"title": "робочі кроки",
 			"items": [
 				{
 					"title": "Аналіз вимог",
@@ -118,7 +118,7 @@
 			]
 		},
 		"choose": {
-			"title": "Наші переваги",
+			"title": "чому обирають нас?",
 			"description": "Обравши нас, Ви обираєте якісне та надійне обслуговування",
 			"items": [
 				{
@@ -148,7 +148,7 @@
 			]
 		},
 		"order": {
-			"title": "Контакти",
+			"title": "зворотний зв'язок",
 			"button": "НАДІСЛАТИ",
 			"name": "* Ваше ім’я",
 			"email": "* Ваш Email",
@@ -159,8 +159,8 @@
 			"error": "Будь-ласка спробуйте пізніше",
 			"send": "Дякуємо за контакт. <br>Ми незабаром зв’яжемося з вами.",
 			"errorContainer": {
-				"required": "Це обов’язкове поле",
-				"emailErrOne": "Email should contain the @ sign. There is no @ in the entered email address.",
+				"required": "Це обов’язкове поле.",
+				"emailErrOne": "Помилка в електронній пошті.",
 				"emailErrTwo": "Enter the part of email after the @ sign. Email address you entered is incomplete."
 			}
 		}
@@ -325,8 +325,8 @@
 			"error": "Please try again later",
 			"send": "Thanks for contacting. <br>We will contact you shortly.",
 			"errorContainer": {
-				"required": "This field is required",
-				"emailErrOne": "Email should contain the @ sign. There is no @ in the entered email address.",
+				"required": "This field is required.",
+				"emailErrOne": "Error in email.",
 				"emailErrTwo": "Enter the part of email after the @ sign. Email address you entered is incomplete."
 			}
 		}

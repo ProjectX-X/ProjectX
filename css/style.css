@@ -877,7 +877,13 @@ button {
   color: white;
   border-radius: 0 0 4px 4px;
 }
-.error-input:not(:focus) + .error-input-add {
+.error-input.required:not(:focus) ~ .error-input-add.required {
+  display: block;
+}
+.error-input.maxlength:not(:focus) ~ .error-input-add.maxlength {
+  display: block;
+}
+.error-input.regex:not(:focus) ~ .error-input-add.regex {
   display: block;
 }
 .message .error-input-add {

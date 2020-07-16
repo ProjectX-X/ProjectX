@@ -1,3 +1,4 @@
+let currentLang = localStorage.getItem('language') || 'eng';
 //form
 const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 const name = document.querySelector("#name");
@@ -20,20 +21,21 @@ started.addEventListener("click", function () {
 
 function checkError(field, isRequired = false, regex) {
   errorMsg.classList.add("hidden");
+
   if (isRequired && !field.value) {
-    field.classList.add("error-input");
+    field.classList.add("error-input", "required");
     return 1;
   }
   if (field.value.length > 255) {
-    field.classList.add("error-input");
+    field.classList.add("error-input", "maxlength");
     return 1;
   }
   if (regex && !regex.test(String(field.value).toLowerCase())) {
-    field.classList.add("error-input");
+    field.classList.add("error-input", "regex");
     return 1;
   }
 
-  field.classList.remove("error-input");
+  field.classList.remove("error-input", "required", "maxlength", "regex");
   return 0;
 }
 
@@ -93,7 +95,7 @@ document.querySelector("._submit").addEventListener("click", submitForm, false);
 
 //lang
 let arrLang;
-//получаем JSON
+// получаем JSON
 fetch('./lang.json')
   .then((response) => {
     return response.json();
@@ -104,7 +106,6 @@ fetch('./lang.json')
   });
 
 initLang = () => {
-  let currentLang = sessionStorage.getItem('language') || 'eng';
   document.querySelector('.lang[value=' + currentLang + ']').checked = true;
   changeLang(currentLang);
   listenLang();
@@ -116,7 +117,7 @@ listenLang = () => {
   targetInput.forEach((item) => {
     item.addEventListener('change', function (e) {
       changeLang(e.target.value);
-      sessionStorage.setItem('language', e.target.value);
+      localStorage.setItem('language', e.target.value);
     });
   })
 }
@@ -177,9 +178,13 @@ changeLang = (lang) => {
   d.querySelectorAll('.form-item-container')
     .forEach((item) => {
       let input = item.querySelector('.form-item, .form-message');
-      let error = item.querySelector('.error-input-add');
+      let error = item.querySelectorAll('.error-input-add');
       input.placeholder = text.order[input.id];
-      if (error) error.textContent = text.order.required;
+      if (error) {
+        error.forEach((item) => {
+          item.textContent = text.order.errorContainer[item.getAttribute('data-js')]
+        })
+      }
     })
 }
 
@@ -261,12 +266,12 @@ $(".header__list").click(function (event) {
 const toolbar = document.querySelector(".header");
 const aboutCoordinates =
   document.querySelector(".about").getBoundingClientRect().top + window.scrollY;
-console.log(
-  "top " + document.querySelector(".header").getBoundingClientRect().top
-);
-console.log(
-  "bottom " + document.querySelector(".header").getBoundingClientRect().bottom
-);
+// console.log(
+//   "top " + document.querySelector(".header").getBoundingClientRect().top
+// );
+// console.log(
+//   "bottom " + document.querySelector(".header").getBoundingClientRect().bottom
+// );
 
 const ourFocusCoordinates =
   document.querySelector(".focus").getBoundingClientRect().top + window.scrollY;

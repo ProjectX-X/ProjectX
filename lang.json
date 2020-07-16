@@ -160,7 +160,7 @@
 			"send": "Дякуємо за контакт. <br>Ми незабаром зв’яжемося з вами.",
 			"errorContainer": {
 				"required": "Це обов’язкове поле.",
-				"emailErrOne": "Помилка в електронній пошті.",
+				"emailErrOne": "Неправильно введений email.",
 				"emailErrTwo": "Enter the part of email after the @ sign. Email address you entered is incomplete."
 			}
 		}
@@ -326,7 +326,7 @@
 			"send": "Thanks for contacting. <br>We will contact you shortly.",
 			"errorContainer": {
 				"required": "This field is required.",
-				"emailErrOne": "Error in email.",
+				"emailErrOne": "The entered email is incorrect.",
 				"emailErrTwo": "Enter the part of email after the @ sign. Email address you entered is incomplete."
 			}
 		}

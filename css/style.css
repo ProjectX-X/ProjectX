@@ -72,6 +72,7 @@ ul {
 }
 .title{
   font-size: 30px;
+  text-transform: capitalize;
 }
 @media (min-width: 768px) {
   .title{

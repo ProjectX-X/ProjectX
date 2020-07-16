@@ -169,7 +169,7 @@ ul {
   position: relative;
   /* margin-left: 25px; */
   padding-left: 14px;
-  top: 10px;
+  top: 14px;
 
 }
 
@@ -234,6 +234,7 @@ li.langs {
 
 .langs button {
 	display: none;
+	font-family: "Montserrat", sans-serif;
 	background-color: #999999;
 	color: #ffffff;
 	padding: 9px 7px;

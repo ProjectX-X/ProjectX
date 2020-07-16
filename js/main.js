@@ -336,3 +336,12 @@ window.addEventListener("scroll", function () {
 window.onload = () => {
   document.querySelector(".home").classList.add("home-backIm");
 };
+
+//toggle lang button
+$(".langs button").click(function(e){
+	
+	let anLang = $(this).siblings('button:first');
+	$(this).removeClass('active');
+	$(anLang).addClass('active');
+	e.preventDefault();
+});

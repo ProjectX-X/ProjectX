@@ -169,6 +169,8 @@ ul {
   position: relative;
   /* margin-left: 25px; */
   padding-left: 14px;
+  top: 10px;
+
 }
 
 .header__list li + li::before {
@@ -177,6 +179,15 @@ ul {
   position: absolute;
   left: 5px;
 }
+
+li.langs::before {
+	content: ""!important;
+}
+
+li.langs {
+	top: 0;
+}
+
 
 .header__list a {
   transition: all 0.5s;
@@ -216,6 +227,26 @@ ul {
 .header__burger {
   display: none;
 }
+
+.langs {
+	z-index: 100;
+}
+
+.langs button {
+	display: none;
+	background-color: #999999;
+	color: #ffffff;
+	padding: 9px 7px;
+	font-size: 120%;
+	border: none;
+	z-index: 100;
+	cursor: pointer;
+}
+
+.langs button.active {
+	display: block;
+}
+
 
 /* ======Header-End===== */
 

@@ -106,18 +106,26 @@ fetch('./lang.json')
   });
 
 initLang = () => {
-  document.querySelector('.lang[value=' + currentLang + ']').checked = true;
+  toggleLangButtons(currentLang);
   changeLang(currentLang);
   listenLang();
+}
+
+toggleLangButtons = (lang) => {
+  localStorage.setItem('language', lang);
+  document.querySelectorAll('.lang').forEach((item) => {
+    item.classList.add('active')
+  });
+  document.querySelector('.lang[data-js=' + lang + ']').classList.remove('active');
 }
 
 //Слушатель на переключатель языка
 listenLang = () => {
   let targetInput = document.querySelectorAll('.lang');
   targetInput.forEach((item) => {
-    item.addEventListener('change', function (e) {
-      changeLang(e.target.value);
-      localStorage.setItem('language', e.target.value);
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+      changeLang(e.target.getAttribute('data-js'));
     });
   })
 }
@@ -126,6 +134,8 @@ listenLang = () => {
 changeLang = (lang) => {
   const d = document;
   const text = arrLang[lang];
+
+  toggleLangButtons(lang);
 
   d.querySelectorAll('.header__link')
     .forEach((item, i) => {
@@ -336,12 +346,3 @@ window.addEventListener("scroll", function () {
 window.onload = () => {
   document.querySelector(".home").classList.add("home-backIm");
 };
-
-//toggle lang button
-$(".langs button").click(function(e){
-	
-	let anLang = $(this).siblings('button:first');
-	$(this).removeClass('active');
-	$(anLang).addClass('active');
-	e.preventDefault();
-});

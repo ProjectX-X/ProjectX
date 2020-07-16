@@ -109,7 +109,6 @@ ul {
 .title{
   font-size: 30px;
   line-height: 1;
-  text-transform: capitalize;
 }
 @media (min-width: 768px) {
   .title{
@@ -220,6 +219,9 @@ li.langs {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+.header__link {
+  text-transform: uppercase;
 }
 .header__link.selected {
   color: #40649b;

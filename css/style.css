@@ -68,10 +68,37 @@ ul {
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  padding: 30px 15px;
+}
+.header .container,
+.footer .container{
+  max-width: 1170px;
+  margin: 0 auto;
   padding: 0 15px;
 }
+.worksteps .container{
+  padding: 30px 15px 16px;
+}
+@media (min-width: 768px) {
+  .container{
+    padding: 60px 15px;
+  }
+  .about .container{
+    padding-bottom: 90px;
+  }
+  .worksteps .container{
+    padding: 60px 15px;
+  }
+}
+@media (min-width: 960px) {
+  .worksteps .container{
+    padding: 60px 15px 30px;
+  }
+}
+
 .title{
   font-size: 30px;
+  line-height: 1;
   text-transform: capitalize;
 }
 @media (min-width: 768px) {
@@ -271,7 +298,7 @@ ul {
 
 /*----------------------- ABOUT -----------------------------IFENKIUL*/
 .about {
-  padding: 25px 0;
+  /*padding: 25px 0;*/
 }
 
 .about__row {
@@ -387,7 +414,7 @@ ul {
 /*------------------------ FOCUS----------------------------- IFENKIUL*/
 .focus {
   background-color: #f7f7f7;
-  padding: 25px 0;
+  /*padding: 25px 0;*/
 }
 
 .focus__top {
@@ -467,22 +494,19 @@ ul {
 
 .focus__bottom-item.forth {
   border-bottom: 2px solid var(--color-focus-orange);
+  margin-bottom: 0;
 }
 
 /*------------------------ FOCUS----------------------------- IFENKIUL*/
 /* ======Team===== */
 .team {
-  height: 784px;
 }
 .team__inner {
   align-items: center;
   text-align: center;
 }
 .team__inner-title {
-  padding-top: 115px;
-  /*font-size: 60px;*/
-  line-height: 80px;
-  margin-bottom: 185px;
+  margin-bottom: 50px;
   color: #313131;
 }
 
@@ -578,8 +602,6 @@ button {
 
 .worksteps {
   text-align: center;
-  padding-top: 7%;
-  padding-bottom: 7%;
 }
 
 .bg_grey_fon {
@@ -587,8 +609,6 @@ button {
 }
 
 .worksteps h2 {
-  /*font-size: 400%;*/
-  line-height: 1.2;
   color: #313131;
   font-weight: normal;
 }
@@ -628,6 +648,9 @@ button {
   background-color: white;
   padding: 5% 3% 5% 3%;
   margin: 5% 0;
+}
+.wrap_tb:last-child .block{
+  margin-bottom: 0;
 }
 
 .block .numb {
@@ -747,7 +770,7 @@ button {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  padding: 30px 10px;
+  padding: 30px 0;
   box-sizing: border-box;
 }
 @media screen and (max-width: 991.98px) {

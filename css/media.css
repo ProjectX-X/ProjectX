@@ -22,11 +22,10 @@
   /* Team */
 
 .team {
-  height: 720px;
+
 }
 .team__inner-title {
-    padding-top: 100px;
-    margin-bottom: 100px;
+
 }
   /* Team-End */
 
@@ -168,13 +167,8 @@
   /* Team */
  
   .team {
-    height: 474px;
   }
   .team__inner-title {
-    /*font-size: 36px;*/
-    line-height: 36px;
-    padding-top: 63px;
-    margin-bottom: 28px;
   }
   .slider__team{
     padding: 0;
@@ -224,13 +218,9 @@
     /* Header-End */
   /* Team */
   .team {
-    height: 400px;
   }
   .team__inner-title{
-    padding-top: 35px;
-    /*font-size: 27px;*/
-    line-height: 28px;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
   .slick-list {
     overflow: hidden;
@@ -311,7 +301,6 @@
 
   /* About Us */
   .about {
-    padding: 50px 0 150px;
   }
 
   .about__row {
@@ -346,7 +335,6 @@
 
   /* Focus */
   .focus {
-    padding: 50px 0;
   }
 
   .focus__bottom-item {
@@ -354,6 +342,9 @@
     margin-right: 7%;
     margin-left: 7%;
     padding: 50px 20px;
+  }
+  .focus__bottom-item.third{
+    margin-bottom: 0;
   }
 
   .focus__bottom-item:last-child {
@@ -372,7 +363,7 @@
 
   /* Order */
   .order {
-    padding: 60px 10px;
+    padding: 60px 0;
   }
   .order-title {
     font-size: 36px;
@@ -416,7 +407,6 @@
 
   /* About Us */
   .about {
-    padding: 100px 0 150px;
   }
   .about__left {
     width: 50%;
@@ -437,7 +427,6 @@
 
   /* Focus */
   .focus {
-    padding: 130px 0;
   }
 
   .focus h2 {
@@ -458,6 +447,7 @@
   .focus__bottom-item {
     width: calc((100% - 60px) / 4);
     margin-right: 20px;
+    margin-bottom: 0;
     margin-left: 0;
     padding: 60px 20px 40px;
   }
@@ -470,7 +460,6 @@
 
   /* Order */
   .order {
-    padding: 60px 5px;
   }
   .order-container {
     width: 66%;
@@ -596,8 +585,7 @@
 	margin-top: 6%;
 }
 .worksteps {
-    padding-top: 3%;
-    padding-bottom: 3%;
+
   }
 
   

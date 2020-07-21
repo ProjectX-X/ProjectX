@@ -1012,6 +1012,9 @@ select:-webkit-autofill:focus {
   text-align: center;
   padding: 15px 0;
 }
+.foo{
+  cursor: pointer;
+}
 
 .footer__inner-logo {
   font-size: 14px;

@@ -19,6 +19,17 @@ started.addEventListener("click", function () {
   });
 });
 
+let foo = document.querySelector(".foo");
+foo.addEventListener("click", function () {
+  // console.log(document.querySelector("#" + started.dataset.name));
+  window.scrollTo({
+    top:
+      document.querySelector("#" + foo.dataset.name).offsetTop -
+      document.querySelector(".header").offsetHeight,
+    behavior: "smooth",
+  });
+});
+
 function checkError(field, isRequired = false, regex) {
   errorMsg.classList.add("hidden");
 

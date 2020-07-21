@@ -307,7 +307,7 @@ const workStepsCoordinates =
 const selectCoordinates =
   document.querySelector("#select").getBoundingClientRect().top +
   window.scrollY;
-
+/*
 window.addEventListener("scroll", function () {
   const windowScroll = window.scrollY;
 
@@ -332,7 +332,7 @@ window.addEventListener("scroll", function () {
     toolbar.style.backgroundColor = "rgba(255,255,255,0.8)"; //WHITE
   }
 });
-
+*/
 // =======================================DIFFERENT LANGUAGES @Ifenkiul 9.07.2020
 // const languagesForPage = {
 //   "a[href='#about']": ["ABOUT US", "ПРО НАС"],

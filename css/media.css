@@ -566,7 +566,7 @@
   }
   
   .why_content .blockW {
-    width: 60%;
+    width: 70%;
 }
 
 .ws_content .block {
@@ -599,7 +599,7 @@
 
 .stepNumbMobile {
 	position: relative;
-    top: 18px;
+    top: 9px;
     left: -20px;
 }
 .block .descr {

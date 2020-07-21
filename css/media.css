@@ -186,13 +186,13 @@
     .langs button {
 	  display: inline-block!important;
 	  background-color: transparent;
-	  color: #999999;
+	  color: #40649B;
 	  font-size: 24px;
 	  padding: 50px 20px 0 0;
   }
   
   .langs button.active {
-	  color: #40649b;
+	  color: #999999;
   }
   
   .langs button:hover {

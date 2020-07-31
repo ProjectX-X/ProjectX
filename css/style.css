@@ -125,7 +125,7 @@ ul {
 .header {
   position: fixed;
   width: 100%;
-  height: 80px;
+  height: 75px;
   top: 0;
   left: 0;
   z-index: 9999;
@@ -264,7 +264,7 @@ li.langs {
   background-position: center;
   padding: 100px 0;
   box-sizing: border-box;
-  margin-top: 80px;
+  margin-top: 75px;
 }
 .home-backIm {
   animation: blurImage 0.8s ease-in-out;

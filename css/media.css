@@ -641,5 +641,10 @@
 	.blockMobile {
 		left: -2px !important;
 	}
+	
+	.block .title_bl {
+		text-align: center;
+		width: 76% !important;
+	}
 }
 /* End======================== Work Steps and Why Select Us ============================= vdobrydin */

@@ -634,7 +634,6 @@
 
 @media (max-width: 400px) {
 	.blockMobile {
-		/*display: table-caption;*/
 		float: left !important;
 	}
 	
@@ -645,6 +644,10 @@
 	.block .title_bl {
 		text-align: center;
 		width: 76% !important;
+	}
+	
+	.why_content .blockW {
+		width: 100%;
 	}
 }
 /* End======================== Work Steps and Why Select Us ============================= vdobrydin */

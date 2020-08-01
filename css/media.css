@@ -631,4 +631,15 @@
 	font-size: 16px;  
   }
 }
+
+@media (max-width: 400px) {
+	.blockMobile {
+		/*display: table-caption;*/
+		float: left !important;
+	}
+	
+	.blockMobile {
+		left: -2px !important;
+	}
+}
 /* End======================== Work Steps and Why Select Us ============================= vdobrydin */

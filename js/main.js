@@ -248,18 +248,11 @@ $(function () {
   });
 });
 // =============smooth scroll to the anchor===============
-const anchors = document.querySelectorAll('.header__body a[href*="#"]');
-
-for (let anchor of anchors) {
-  anchor.addEventListener("click", function (event) {
-    event.preventDefault();
-    const blockID = anchor.getAttribute("href");
-    document.querySelector("" + blockID).scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-    });
-  });
-}
+$("body").on('click', '[href^="#"]', function(e){
+  let fixed_offset = 75;
+  $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+  e.preventDefault();
+});
 // ================Change the color of menu links===========
 let anchorArr = document.getElementsByClassName("header__link");
 let prevLink = "";

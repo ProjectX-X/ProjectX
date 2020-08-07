@@ -265,6 +265,31 @@ for (let i = 0; i < anchorArr.length; i++) {
     prevLink = this;
   };
 }
+// ================Cactive class of menu items onscroll===========
+window.addEventListener("scroll", () => {
+  let fixed_offset = 150;
+  let scrollDistance = window.scrollY + fixed_offset;
+
+  if (window.innerWidth > 768) {
+    document.querySelectorAll(".section").forEach((el, i) => {
+      if (
+        el.offsetTop - document.querySelector(".header__menu").clientHeight <=
+        scrollDistance
+      ) {
+        document.querySelectorAll(".header__menu a").forEach((el) => {
+          if (el.classList.contains("selected")) {
+            el.classList.remove("selected");
+          }
+        });
+
+        document
+          .querySelectorAll(".header__menu li")
+          [i].querySelector("a")
+          .classList.add("selected");
+      }
+    });
+  }
+});
 // =============Burger-menu===============================
 $(".header__burger").click(function (event) {
   $(".header__burger, .header__menu").toggleClass("active");

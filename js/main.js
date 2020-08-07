@@ -265,7 +265,7 @@ for (let i = 0; i < anchorArr.length; i++) {
     prevLink = this;
   };
 }
-// ================Cactive class of menu items onscroll===========
+// ================Active class of menu items onscroll===========
 window.addEventListener("scroll", () => {
   let fixed_offset = 150;
   let scrollDistance = window.scrollY + fixed_offset;

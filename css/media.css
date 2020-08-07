@@ -10,12 +10,12 @@
   .header__body {
     height: 75px;
   }
-  .home{
-   margin-top: 75px;
+  .home {
+    margin-top: 75px;
   }
-  
+
   .langs button {
-	font-size: 14px;
+    font-size: 14px;
   }
 
   /* Header-End */
@@ -40,7 +40,6 @@
   /* Team */
 
   /* Team-End */
-
 }
 @media (max-width: 930px) {
   /* Header */
@@ -64,7 +63,7 @@
   /* Header */
   .header,
   .header__body {
-    height: 50px; 
+    height: 50px;
   }
   .header__logo {
     font-size: 20px;
@@ -87,7 +86,7 @@
   }
   .header,
   .header__body {
-    height: 75px; 
+    height: 75px;
   }
   .header__logo {
     font-size: 48px; /*32px*/
@@ -133,7 +132,7 @@
     top: 20px; /*9px*/
   }
   .header__burger.active::after {
-    transform: rotate(135deg); 
+    transform: rotate(135deg);
     bottom: 20px; /*9px*/
   }
   .header__menu {
@@ -160,7 +159,7 @@
     display: block;
     padding-top: 30px;
   }
-  .about__right__rainbow.header__list--rainbow{
+  .about__right__rainbow.header__list--rainbow {
     display: grid;
     position: absolute;
     top: 10px;
@@ -174,12 +173,12 @@
   }
   .header__link {
     font-size: 24px;
-    color: #999999 ;
+    color: #999999;
   }
-  .header__link.selected{
-    color: #40649b;
+  .header__link.selected {
+    color: #999999;
   }
-  .changeLang{
+  .changeLang {
     display: none;
   }
   .home {
@@ -188,8 +187,8 @@
   /* Header-burgerEnd */
 
   /* Team */
- 
-  .slider__team{
+
+  .slider__team {
     padding: 0;
   }
   .slick-arrow {
@@ -197,22 +196,21 @@
   }
 
   /* Team-End */
-    .langs button {
-	  display: inline-block!important;
-	  background-color: transparent;
-	  color: #40649B;
-	  font-size: 24px;
-	  padding: 50px 20px 0 0;
-  }
-  
-  .langs button.active {
-	  color: #999999;
-  }
-  
-  .langs button:hover {
-	  color: #333333;
+  .langs button {
+    display: inline-block !important;
+    background-color: transparent;
+    color: #40649b;
+    font-size: 24px;
+    padding: 50px 20px 0 0;
   }
 
+  .langs button.active {
+    color: #999999;
+  }
+
+  .langs button:hover {
+    color: #333333;
+  }
 }
 
 @media (max-width: 500px) {
@@ -224,46 +222,46 @@
   .header__body {
     height: 60px;
   }
-  .header__burger{
+  .header__burger {
     width: 45px;
     height: 30px;
   }
-  .header__burger span{
+  .header__burger span {
     top: 13px;
     height: 4px;
   }
   .header__burger::before,
-  .header__burger::after{
+  .header__burger::after {
     height: 4px;
   }
-  .header__burger.active::before{
+  .header__burger.active::before {
     top: 13px;
   }
-  .header__burger.active::after{
+  .header__burger.active::after {
     bottom: 13px;
   }
-  .header__list{
+  .header__list {
     padding-top: 10px;
   }
-  .about__right__rainbow.header__list--rainbow{
+  .about__right__rainbow.header__list--rainbow {
     top: -10px;
   }
   .home {
     margin-top: 60px;
   }
-    /* Header-End */
+  /* Header-End */
   /* Team */
-   .team__inner-title{
+  .team__inner-title {
     margin-bottom: 20px;
   }
   .slick-list {
     overflow: hidden;
   }
   .slider__team-item {
-    opacity: .4;;
+    opacity: 0.4;
   }
   .slider__team-item.slick-center {
-    transition: all .3s ease .3s;
+    transition: all 0.3s ease 0.3s;
     opacity: 1;
   }
   .slider__team-foto {
@@ -273,7 +271,6 @@
     display: block;
   } */
   /* Team-End */
-
 }
 
 @media (max-width: 321px) {
@@ -285,29 +282,29 @@
   .header__body {
     height: 50px;
   }
-  .header__burger{
+  .header__burger {
     width: 35px;
     height: 25px;
   }
-  .header__burger span{
+  .header__burger span {
     top: 11px;
   }
-  .header__burger.active::before{
+  .header__burger.active::before {
     top: 10px;
   }
-  .header__burger.active::after{
+  .header__burger.active::after {
     bottom: 10px;
   }
-  .header__list{
+  .header__list {
     padding-top: 0;
   }
-  .about__right__rainbow.header__list--rainbow{
+  .about__right__rainbow.header__list--rainbow {
     top: -20px;
   }
   .header__link {
     font-size: 18px;
   }
-  .langs button{
+  .langs button {
     font-size: 22px;
   }
   /* Header-burgerEnd */
@@ -316,23 +313,22 @@
   .home {
     margin-top: 50px; /* Maksim - to prevent the Home block from overriding the menu*/
   }
-  .home-title{
+  .home-title {
     font-size: 17px;
   }
   /* Home-End */
 }
 
 @media (min-width: 768px) {
-
   /* Home */
   .home {
     padding: 180px 0 130px;
   }
-  .home-title{
+  .home-title {
     font-size: 36px;
     margin-bottom: 50px;
   }
-  .started{
+  .started {
     padding: 10px 20px;
   }
   /* Home End */
@@ -381,7 +377,7 @@
     margin-left: 7%;
     padding: 50px 20px;
   }
-  .focus__bottom-item.third{
+  .focus__bottom-item.third {
     margin-bottom: 0;
   }
 
@@ -410,7 +406,7 @@
     margin-bottom: 30px;
     font-size: 16px;
   }
-  .d-none{
+  .d-none {
     display: inline-block;
   }
   .form-item-container {
@@ -423,7 +419,7 @@
   .form-item-container:nth-child(2n-1) {
     margin-right: 30px;
   }
-  .form-item-container.message{
+  .form-item-container.message {
     width: 100%;
     margin-right: 0;
     margin-bottom: 24px;
@@ -514,140 +510,134 @@
 }
 
 /* Begin======================== Work Steps and Why Select Us ============================= vdobrydin */
-  
-  @media (max-width: 991.98px) {
 
+@media (max-width: 991.98px) {
   .block .title_bl {
     font-size: 150%;
-	word-wrap: normal;
-  }  
-	  
-	.ws_content {
-	background-size: 100% auto; 
+    word-wrap: normal;
   }
-  
+
+  .ws_content {
+    background-size: 100% auto;
+  }
+
   .centBlock {
-	float: none;
-	clear: both !important;
-    margin: 0 auto !important;  
+    float: none;
+    clear: both !important;
+    margin: 0 auto !important;
   }
-  
+
   .ws_content .text_blocks {
     top: 0;
   }
-  
+
   .ws_content {
-	background-image: none;
+    background-image: none;
   }
-  
+
   .ws_content .block {
     width: 55%;
   }
-  
+
   .ws_content .wrap_tb {
-	  background-repeat: no-repeat;
-	  background-size: 100% auto; 
-	  padding: 15% 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 15% 0;
   }
-  
-  
+
   .ws_content .wrap_tb.bg1 {
-	  background-image: url("../img/workSt_1.jpg");
+    background-image: url("../img/workSt_1.jpg");
   }
-  
+
   .ws_content .wrap_tb.bg2 {
-	  background-image: url("../img/workSt_2.jpg");
+    background-image: url("../img/workSt_2.jpg");
   }
-  
+
   .ws_content .wrap_tb.bg3 {
-	  background-image: url("../img/workSt_3.jpg");
+    background-image: url("../img/workSt_3.jpg");
   }
-  
+
   .ws_content .wrap_tb.bg4 {
-	  background-image: url("../img/workSt_4.jpg");
+    background-image: url("../img/workSt_4.jpg");
   }
-  
+
   .why_content .blockW {
     width: 40%;
   }
 
-  
   .worksteps p {
-	font-size: 18px;  
+    font-size: 18px;
   }
- }
+}
 
 @media (max-width: 767.98px) {
   .ws_content .wrap_tb {
     padding: 0 0 5% 0;
   }
-  
+
   .why_content .blockW {
     width: 70%;
-}
-
-.ws_content .block {
-    width: 100%;
-}
-
-.ws_content .wrap_tb {
-    background-image: none !important;
-}
-
-.wrap_tb img {
-	display: block;
-	width: 100%;
-  
-}
-
-.blockMobile {
-	float: none !important;
-	display: inline-block;
-}
-
-.block .title_bl {
-	width: auto !important;
-}
-
-.block .descr {
-    width: auto; 
-    text-align: center;
-}
-
-.stepNumbMobile {
-	position: relative;
-    top: 9px;
-    left: -20px;
-}
-.block .descr {
-	margin-top: 6%;
-}
-.worksteps {
-
   }
 
-  
+  .ws_content .block {
+    width: 100%;
+  }
+
+  .ws_content .wrap_tb {
+    background-image: none !important;
+  }
+
+  .wrap_tb img {
+    display: block;
+    width: 100%;
+  }
+
+  .blockMobile {
+    float: none !important;
+    display: inline-block;
+  }
+
+  .block .title_bl {
+    width: auto !important;
+  }
+
+  .block .descr {
+    width: auto;
+    text-align: center;
+  }
+
+  .stepNumbMobile {
+    position: relative;
+    top: 9px;
+    left: -20px;
+  }
+  .block .descr {
+    margin-top: 6%;
+  }
+  .worksteps {
+  }
+
   .worksteps p {
-	font-size: 16px;  
+    font-size: 16px;
   }
 }
 
 @media (max-width: 400px) {
-	.blockMobile {
-		float: left !important;
-	}
-	
-	.blockMobile {
-		left: -2px !important;
-	}
-	
-	.block .title_bl {
-		text-align: center;
-		width: 76% !important;
-	}
-	
-	.why_content .blockW {
-		width: 100%;
-	}
+  .blockMobile {
+    float: left !important;
+  }
+
+  .blockMobile {
+    left: -2px !important;
+  }
+
+  .block .title_bl {
+    text-align: center;
+    width: 76% !important;
+  }
+
+  .why_content .blockW {
+    width: 100%;
+  }
 }
 /* End======================== Work Steps and Why Select Us ============================= vdobrydin */

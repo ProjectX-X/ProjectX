@@ -267,7 +267,7 @@ for (let i = 0; i < anchorArr.length; i++) {
 }
 // ================Active class of menu items onscroll===========
 window.addEventListener("scroll", () => {
-  let fixed_offset = 150;
+  let fixed_offset = 200;
   let scrollDistance = window.scrollY + fixed_offset;
 
   if (window.innerWidth > 768) {
@@ -302,55 +302,55 @@ $(".header__list").click(function (event) {
 // =======================================================
 
 // =======================================HEADER-CHANGING BG-COLOR @Ifenkiul 8.07.2020
-const toolbar = document.querySelector(".header");
-const aboutCoordinates =
-  document.querySelector(".about").getBoundingClientRect().top + window.scrollY;
-// console.log(
-//   "top " + document.querySelector(".header").getBoundingClientRect().top
-// );
-// console.log(
-//   "bottom " + document.querySelector(".header").getBoundingClientRect().bottom
-// );
+// const toolbar = document.querySelector(".header");
+// const aboutCoordinates =
+//   document.querySelector(".about").getBoundingClientRect().top + window.scrollY;
+// // console.log(
+// //   "top " + document.querySelector(".header").getBoundingClientRect().top
+// // );
+// // console.log(
+// //   "bottom " + document.querySelector(".header").getBoundingClientRect().bottom
+// // );
 
-const ourFocusCoordinates =
-  document.querySelector(".focus").getBoundingClientRect().top + window.scrollY;
+// const ourFocusCoordinates =
+//   document.querySelector(".focus").getBoundingClientRect().top + window.scrollY;
 
-const teamCoordinates =
-  document.querySelector(".team").getBoundingClientRect().top + window.scrollY;
+// const teamCoordinates =
+//   document.querySelector(".team").getBoundingClientRect().top + window.scrollY;
 
-const workStepsCoordinates =
-  document.querySelector(".worksteps").getBoundingClientRect().top +
-  window.scrollY;
+// const workStepsCoordinates =
+//   document.querySelector(".worksteps").getBoundingClientRect().top +
+//   window.scrollY;
 
-const selectCoordinates =
-  document.querySelector("#select").getBoundingClientRect().top +
-  window.scrollY;
-/*
-window.addEventListener("scroll", function () {
-  const windowScroll = window.scrollY;
+// const selectCoordinates =
+//   document.querySelector("#select").getBoundingClientRect().top +
+//   window.scrollY;
+// /*
+// window.addEventListener("scroll", function () {
+//   const windowScroll = window.scrollY;
 
-  if (windowScroll >= aboutCoordinates && windowScroll < ourFocusCoordinates) {
-    toolbar.style.backgroundColor = "rgba(246, 71, 71, 0.8)"; //RED
-  } else if (
-    windowScroll >= ourFocusCoordinates &&
-    windowScroll < teamCoordinates
-  ) {
-    toolbar.style.backgroundColor = "rgba(0,250,154, 0.8)"; //GREEN
-  } else if (
-    windowScroll >= teamCoordinates &&
-    windowScroll < workStepsCoordinates
-  ) {
-    toolbar.style.backgroundColor = "rgba(190, 144, 212,0.8)"; //PURPLE
-  } else if (
-    windowScroll >= workStepsCoordinates &&
-    windowScroll < selectCoordinates
-  ) {
-    toolbar.style.backgroundColor = "rgba(245, 171, 53, 0.8)"; //ORANGE
-  } else {
-    toolbar.style.backgroundColor = "rgba(255,255,255,0.8)"; //WHITE
-  }
-});
-*/
+//   if (windowScroll >= aboutCoordinates && windowScroll < ourFocusCoordinates) {
+//     toolbar.style.backgroundColor = "rgba(246, 71, 71, 0.8)"; //RED
+//   } else if (
+//     windowScroll >= ourFocusCoordinates &&
+//     windowScroll < teamCoordinates
+//   ) {
+//     toolbar.style.backgroundColor = "rgba(0,250,154, 0.8)"; //GREEN
+//   } else if (
+//     windowScroll >= teamCoordinates &&
+//     windowScroll < workStepsCoordinates
+//   ) {
+//     toolbar.style.backgroundColor = "rgba(190, 144, 212,0.8)"; //PURPLE
+//   } else if (
+//     windowScroll >= workStepsCoordinates &&
+//     windowScroll < selectCoordinates
+//   ) {
+//     toolbar.style.backgroundColor = "rgba(245, 171, 53, 0.8)"; //ORANGE
+//   } else {
+//     toolbar.style.backgroundColor = "rgba(255,255,255,0.8)"; //WHITE
+//   }
+// });
+// */
 // =======================================DIFFERENT LANGUAGES @Ifenkiul 9.07.2020
 // const languagesForPage = {
 //   "a[href='#about']": ["ABOUT US", "ПРО НАС"],

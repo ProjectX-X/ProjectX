@@ -79,7 +79,7 @@
   }
   /* Header-End */
 }
-@media (max-width: 768px), (min-height: 950px), (orientation: landscape) {
+@media (max-width: 768px), (min-height: 950px) {
   /* Header-burger */
   body.lock {
     overflow: hidden;

@@ -79,7 +79,7 @@
   }
   /* Header-End */
 }
-@media (max-width: 768px) {
+@media (max-width: 768px), (min-height: 950px), (orientation: landscape) {
   /* Header-burger */
   body.lock {
     overflow: hidden;
@@ -641,3 +641,4 @@
   }
 }
 /* End======================== Work Steps and Why Select Us ============================= vdobrydin */
+

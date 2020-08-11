@@ -79,7 +79,7 @@
   }
   /* Header-End */
 }
-@media (max-width: 768px), (min-height: 971px) {
+@media (max-width: 768px), (min-height: 1024px) {
   /* Header-burger */
   body.lock {
     overflow: hidden;
